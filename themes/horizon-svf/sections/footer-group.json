@@ -1,0 +1,254 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:names.footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "group_y4aNMX": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 20,
+            "width": "fill",
+            "width_mobile": "fill",
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {
+            "logo_MKbnJy": {
+              "type": "text",
+              "settings": {
+                "text": "<p><a href=\"/\" title=\"Sacoche Vélo France\">Sacoche Vélo France</a></p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h5",
+                "text_color": "#ffffff",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "alignment_mobile": "left",
+                "custom_class": "svf-footer-logo"
+              }
+            },
+            "text_hzJHEn": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Notre service client est disponible du lundi au vendredi de 9h à 17h. Nous répondons généralement sous 24 heures.<br/> <br/>contact@sacoche-velo-france.com<br/><br/></p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "text_color": "#ffffff",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "rich_text_styles": false,
+                "alignment_mobile": "left"
+              }
+            }
+          },
+          "block_order": [
+            "logo_MKbnJy",
+            "text_hzJHEn"
+          ]
+        },
+        "menu_K3tacq_centre": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 0,
+            "width": "fill",
+            "custom_class": "svf-menu-center"
+          },
+          "blocks": {
+            "menu_K3tacq": {
+              "type": "menu",
+              "settings": {
+                "menu": "main-menu",
+                "heading": "Menu",
+                "menu_spacing": 16,
+                "show_as_accordion": false,
+                "text_color": "#ffffff",
+                "heading_preset": "h6",
+                "link_preset": "paragraph",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "heading_tag": "h3"
+              }
+            }
+          },
+          "block_order": [
+            "menu_K3tacq"
+          ]
+        },
+        "menu_Gm99MY": {
+          "type": "menu",
+          "settings": {
+            "menu": "infos-utiles",
+            "heading": "Infos utiles",
+            "menu_spacing": 16,
+            "show_as_accordion": false,
+            "text_color": "#ffffff",
+            "heading_preset": "h6",
+            "link_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "heading_tag": "h3"
+          }
+        },
+        "group_BxVQwU": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 10,
+            "width": "fill",
+            "width_mobile": "fill",
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {
+            "text_RtFCiT": {
+              "type": "text",
+              "settings": {
+                "text": "<p>S'abonner à nos e-mails</p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h6",
+                "text_color": "#ffffff",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "rich_text_styles": false,
+                "alignment_mobile": "left"
+              }
+            },
+            "text_iMUynb": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Recevez en avant première nos offres et nos actualités.</p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "text_color": "#ffffff",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "rich_text_styles": false,
+                "alignment_mobile": "left",
+                "custom_class": "svf-text-small"
+              }
+            },
+            "newsletter_signup_tUYiRB": {
+              "type": "email-signup",
+              "settings": {
+                "width": "fill",
+                "border_style": "all",
+                "input_style": "custom",
+                "border_width": 1,
+                "border_radius": 10,
+                "input_background_color": "#ffffff",
+                "input_text_color": "#252525",
+                "input_border_color": "#00000021",
+                "input_type_preset": "paragraph",
+                "style_class": "button-secondary",
+                "display_type": "arrow",
+                "integrated_button": true,
+                "padding-block-start": 10,
+                "padding-block-end": 0
+              }
+            }
+          },
+          "block_order": [
+            "text_RtFCiT",
+            "text_iMUynb",
+            "newsletter_signup_tUYiRB"
+          ]
+        }
+      },
+      "block_order": [
+        "group_y4aNMX",
+        "menu_K3tacq_centre",
+        "menu_Gm99MY",
+        "group_BxVQwU"
+      ],
+      "settings": {
+        "section_width": "page-width",
+        "gap": 30,
+        "background_color": "#000000",
+        "padding-block-start": 60,
+        "padding-block-end": 0
+      }
+    },
+    "utilities": {
+      "type": "footer-utilities",
+      "blocks": {
+        "payment_methods_W3BxcW": {
+          "type": "payment-methods",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "alignment_desktop": "flex-start",
+            "alignment_mobile": "center",
+            "icon_size": 35,
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "copyright_AMhhCc": {
+          "type": "footer-copyright",
+          "settings": {
+            "show_powered_by": false,
+            "text_color": "#ffffff",
+            "font_size": "0.75rem",
+            "case": "none"
+          }
+        },
+        "logo_zNBBzm": {
+          "type": "logo",
+          "settings": {
+            "inverse": false,
+            "unit": "pixel",
+            "pixel_height": 80,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          }
+        }
+      },
+      "block_order": [
+        "payment_methods_W3BxcW",
+        "copyright_AMhhCc",
+        "logo_zNBBzm"
+      ],
+      "settings": {
+        "section_width": "page-width",
+        "gap": 30,
+        "background_color": "#000000",
+        "divider_thickness": 0,
+        "padding-block-start": 20,
+        "padding-block-end": 20
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "utilities"
+  ]
+}

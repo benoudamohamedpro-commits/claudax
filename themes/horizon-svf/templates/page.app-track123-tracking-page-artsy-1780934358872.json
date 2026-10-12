@@ -1,0 +1,48 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+/*
+ * Modèle transposé depuis le thème d'origine par outils/convertir.mjs.
+ * Les textes et leurs balises (h1 à h6, p) sont recopiés sans modification.
+ */
+{
+  "sections": {
+    "16709164393c099f56-1780934358872": {
+      "type": "apps",
+      "blocks": {
+        "11161dbd-4319-4295-8710-e7b7012a9712-1780934358872": {
+          "type": "shopify://apps/track123/blocks/search/60c49c11-a7c0-49a0-861e-2f84d2f294e6",
+          "settings": {
+            "block_image": "shopify://shop_images/a1dd8a71-54cb-445b-b22f-dc62726a9187.webp",
+            "search_form_background_color": "#ffffff",
+            "preview_state": "detail",
+            "search_by": "by_order_number_or_by_tracking_number",
+            "time_format": "HH:mm",
+            "map_coordinates": "current_package_location",
+            "show_estimated_delivery_time": true,
+            "show_carrier_info": false,
+            "only_show_last_mile_carrier": false,
+            "show_tracking_number": true,
+            "link_to_carrier_website": false,
+            "show_package_info": true,
+            "show_reorder_button": true,
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "11161dbd-4319-4295-8710-e7b7012a9712-1780934358872"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "16709164393c099f56-1780934358872"
+  ]
+}

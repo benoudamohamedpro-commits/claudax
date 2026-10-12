@@ -1,0 +1,1767 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 10,
+            "large_first_image": false,
+            "slideshow_controls_style": "thumbnails",
+            "slideshow_mobile_controls_style": "thumbnails",
+            "thumbnail_position": "bottom",
+            "thumbnail_width": 70,
+            "thumbnail_radius": 0,
+            "aspect_ratio": "1",
+            "constrain_to_viewport": false,
+            "media_fit": "cover",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": false,
+            "video_loop": true,
+            "hide_variants": false
+          }
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 12,
+            "sticky_details_desktop": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "rating_stars_Krck47": {
+              "type": "rating-stars",
+              "disabled": true,
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "product": "{{ closest.product }}",
+                "hide_rating_when_no_reviews": true,
+                "rating": 4.5,
+                "show_note": true,
+                "show_review_count": true,
+                "review_count": 123,
+                "link": "#reviews",
+                "margin_top": 10,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "custom_code_wQrxqn": {
+              "type": "custom-liquid",
+              "settings": {
+                "custom_liquid": "<a href=\"#reviews\" style=\"text-decoration:none;cursor:pointer;\">\n  <div style=\"display:inline-flex;align-items:center;gap:10px;margin-bottom:3px;\">\n    <div style=\"display:flex;align-items:center;gap:3px;\">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 -2.5 28 28\"><path d=\"M14 2l3.09 6.26L24 9.27l-5 4.87 1.18 6.88L14 17.77l-6.18 3.25L9 14.14 4 9.27l6.91-1.01L14 2z\" fill=\"#fbcb05\"/></svg>\n      <svg width=\"16\" height=\"16\" viewBox=\"0 -2.5 28 28\"><path d=\"M14 2l3.09 6.26L24 9.27l-5 4.87 1.18 6.88L14 17.77l-6.18 3.25L9 14.14 4 9.27l6.91-1.01L14 2z\" fill=\"#fbcb05\"/></svg>\n      <svg width=\"16\" height=\"16\" viewBox=\"0 -2.5 28 28\"><path d=\"M14 2l3.09 6.26L24 9.27l-5 4.87 1.18 6.88L14 17.77l-6.18 3.25L9 14.14 4 9.27l6.91-1.01L14 2z\" fill=\"#fbcb05\"/></svg>\n      <svg width=\"16\" height=\"16\" viewBox=\"0 -2.5 28 28\"><path d=\"M14 2l3.09 6.26L24 9.27l-5 4.87 1.18 6.88L14 17.77l-6.18 3.25L9 14.14 4 9.27l6.91-1.01L14 2z\" fill=\"#fbcb05\"/></svg>\n      <svg width=\"16\" height=\"16\" viewBox=\"0 -2.5 28 28\">\n        <defs><linearGradient id=\"p46\" x1=\"0\" x2=\"1\" y1=\"0\" y2=\"0\"><stop offset=\"60%\" stop-color=\"#fbcb05\"/><stop offset=\"60%\" stop-color=\"#ccc\"/></linearGradient></defs>\n        <path d=\"M14 2l3.09 6.26L24 9.27l-5 4.87 1.18 6.88L14 17.77l-6.18 3.25L9 14.14 4 9.27l6.91-1.01L14 2z\" fill=\"url(#p46)\"/>\n      </svg>\n    </div>\n    <span style=\"font-family:'Arial Black',Arial,sans-serif;font-size:16px;font-weight:900;line-height:1;color:#0e0e0d;letter-spacing:-0.01em;\">4,6/5</span>\n    <span style=\"width:1px;height:13px;background:#ccc;display:inline-block;\"></span>\n    <span style=\"font-family:Arial,sans-serif;font-size:14px;line-height:1;color:#6b6b68;letter-spacing:0.03em;\">89 avis</span>\n  </div>\n</a>"
+              }
+            },
+            "text_zLqMQw": {
+              "type": "text",
+              "settings": {
+                "text": "<h1>{{ product.title }}</h1>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h3",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "rich_text_styles": false,
+                "alignment_mobile": "left"
+              }
+            },
+            "group_pCUhCJ": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 10,
+                "width": "fill",
+                "width_mobile": "fill",
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {
+                "product_price_KHyPWf": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left",
+                    "sales_badge": "amount"
+                  }
+                },
+                "icon_with_text_NRKeXF": {
+                  "type": "icon-with-text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "layout_direction_desktop": "row",
+                    "layout_gap_desktop": 5,
+                    "same_as_desktop": true,
+                    "layout_direction_mobile": "column",
+                    "layout_gap_mobile": 10,
+                    "icon_type": "icon",
+                    "icon": "check",
+                    "icon_custom": "",
+                    "icon_size": 25,
+                    "icon_position": "start",
+                    "text": "<p><strong>Sacoches PVC à coutures soudées</strong> : étanchéité complète, le contenu reste au sec sous la pluie et les projections de roue</p>",
+                    "text_style": "paragraph",
+                    "font_weight": 500,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "icon_with_text_p6ej7V": {
+                  "type": "icon-with-text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "layout_direction_desktop": "row",
+                    "layout_gap_desktop": 5,
+                    "same_as_desktop": true,
+                    "layout_direction_mobile": "column",
+                    "layout_gap_mobile": 10,
+                    "icon_type": "icon",
+                    "icon": "check",
+                    "icon_custom": "",
+                    "icon_size": 25,
+                    "icon_position": "start",
+                    "text": "<p><strong>Supports métalliques compatibles tous types de fourche</strong> : se montent sur les œillets ou par sangles, fourche rigide comme suspendue</p>",
+                    "text_style": "paragraph",
+                    "font_weight": 500,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "icon_with_text_pmnVKk": {
+                  "type": "icon-with-text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "layout_direction_desktop": "row",
+                    "layout_gap_desktop": 5,
+                    "same_as_desktop": true,
+                    "layout_direction_mobile": "column",
+                    "layout_gap_mobile": 10,
+                    "icon_type": "icon",
+                    "icon": "check",
+                    "icon_custom": "",
+                    "icon_size": 25,
+                    "icon_position": "start",
+                    "text": "<p><strong>Charge basse sur la fourche avant</strong> : abaisse le centre de gravité et stabilise la direction</p>",
+                    "text_style": "paragraph",
+                    "font_weight": 500,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "icon_with_text_iTMDMY": {
+                  "type": "icon-with-text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "layout_direction_desktop": "row",
+                    "layout_gap_desktop": 5,
+                    "same_as_desktop": true,
+                    "layout_direction_mobile": "column",
+                    "layout_gap_mobile": 10,
+                    "icon_type": "icon",
+                    "icon": "check",
+                    "icon_custom": "",
+                    "icon_size": 25,
+                    "icon_position": "start",
+                    "text": "<p><strong>Verrouillage roll-top à double boucle</strong> : le sac reste fermé et le chargement maintenu, même sur piste secouée</p>",
+                    "text_style": "paragraph",
+                    "font_weight": 500,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_price_KHyPWf",
+                "icon_with_text_NRKeXF",
+                "icon_with_text_p6ej7V",
+                "icon_with_text_pmnVKk",
+                "icon_with_text_iTMDMY"
+              ]
+            },
+            "group_XWYXxh": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 10,
+                "width": "fill",
+                "width_mobile": "fill",
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "product_variant_picker_xWC3wF": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": true,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 10,
+                "svf_swatch_size": "normal",
+                "svf_swatch_square": false
+              }
+            },
+            "product_inventory_4bCNrH": {
+              "type": "product-inventory",
+              "settings": {
+                "inventory_threshold": 20,
+                "show_inventory_quantity": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              }
+            },
+            "product_form_grYQk6_achat": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": false,
+                "show_pickup_availability": false,
+                "gift_card_form": false
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button-custom",
+                    "custom_button_background": "#fcdc00",
+                    "custom_button_text": "#252525",
+                    "custom_button_border": "#fcdc00",
+                    "show_price": true
+                  }
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "disabled": true,
+                  "static": true,
+                  "settings": {}
+                }
+              },
+              "block_order": []
+            },
+            "payment_methods_khjTAV": {
+              "type": "payment-methods",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "alignment_desktop": "center",
+                "alignment_mobile": "center",
+                "icon_size": 35,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "delivery_estimation_A43yiG": {
+              "type": "delivery-estimation",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "icon": "delivery_truck_speed",
+                "icon_custom": "",
+                "alignment_desktop": "center",
+                "alignment_mobile": "center",
+                "date_format": "in_letters",
+                "show_weekday": false,
+                "minimum_delivery_days": 7,
+                "maximum_delivery_days": 10,
+                "cutoff_hour": 14,
+                "no_delivery_on_saturday": false,
+                "no_delivery_on_sunday": false,
+                "delivery_estimation_text": "Livré entre le",
+                "translation_between_dates": "et le",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "custom_code_4Mmgab": {
+              "type": "custom-liquid",
+              "settings": {
+                "custom_liquid": "<div class=\"trust-section\">\n  <div class=\"trust-grid\">\n    <div class=\"trust-card\">\n      <div class=\"badge-number\">01</div>\n      <h3>Livraison</h3>\n      <p>Gratuite</p>\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n        <rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/>\n        <polygon points=\"16 8 20 8 23 11 23 16 16 16 16 8\"/>\n        <circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/>\n        <circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/>\n      </svg>\n    </div>\n    <div class=\"trust-card\">\n      <div class=\"badge-number\">02</div>\n      <h3>Retours</h3>\n      <p>Gratuits</p>\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n        <path d=\"M9 14 4 9l5-5\"/>\n        <path d=\"M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5 5.5 5.5 0 0 1-5.5 5.5H11\"/>\n      </svg>\n    </div>\n    <div class=\"trust-card\">\n      <div class=\"badge-number\">03</div>\n      <h3>Garantie</h3>\n      <p>1 An</p>\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n        <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/>\n        <path d=\"M12 12v4\"/>\n      </svg>\n    </div>\n  </div>\n</div>\n<style>\n  .trust-section {\n    margin: 1.5rem 0 1rem;\n  }\n  .trust-grid {\n    display: grid;\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n    gap: 0.5rem;\n  }\n  .trust-card {\n    position: relative;\n    padding: 1.1rem 0.5rem 0.7rem;\n    border: 1px solid #e5e5e5;\n    border-radius: 8px;\n    text-align: center;\n    background: #fafafa;\n    transition: border-color 0.3s ease, background 0.3s ease;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n  }\n  .trust-card:hover {\n    border-color: #2a7f62;\n    background: #f0f7f4;\n  }\n  .badge-number {\n    position: absolute;\n    top: -10px;\n    left: 50%;\n    transform: translateX(-50%);\n    width: 20px;\n    height: 20px;\n    background: #2a7f62;\n    color: #fff;\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-weight: 700;\n    font-size: 0.7rem;\n  }\n  .trust-card h3 {\n    margin: 0 0 0.1rem;\n    font-size: 0.78rem;\n    font-weight: 600;\n    color: #333;\n    line-height: 1.2;\n  }\n  .trust-card p {\n    margin: 0 0 0.4rem;\n    font-size: 0.8rem;\n    font-weight: 700;\n    color: #2a7f62;\n    line-height: 1.2;\n  }\n  .trust-card svg {\n    width: 18px;\n    height: 18px;\n    color: #2a7f62;\n    stroke-linecap: round;\n    stroke-linejoin: round;\n  }\n  @media (max-width: 380px) {\n    .trust-grid {\n      gap: 0.35rem;\n    }\n    .trust-card {\n      padding: 1rem 0.3rem 0.6rem;\n    }\n    .trust-card h3 {\n      font-size: 0.72rem;\n    }\n    .trust-card p {\n      font-size: 0.74rem;\n    }\n  }\n</style>"
+              }
+            },
+            "accordions_KKUaHK": {
+              "type": "accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "type_preset": "paragraph",
+                "custom_class": "svf-accordion--small"
+              },
+              "blocks": {
+                "accordion_tJcRGm": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Description",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "material_icon": "search"
+                  },
+                  "blocks": {
+                    "text_NJUacQ": {
+                      "type": "text",
+                      "settings": {
+                        "text": "{{ closest.product.description }}",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "rich_text_styles": false,
+                        "alignment_mobile": "left"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "text_NJUacQ"
+                  ]
+                },
+                "accordion_gU7QYn": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Livraison & retours",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "material_icon": "package_2"
+                  },
+                  "blocks": {
+                    "text_zgU7ap": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Expédition sous 24h à 48h</p><p>Délais de livraison : 7 à 16 jours ouvrés en France métropolitaine.</p><p>Vous avez 14 jours pour retourner et échanger ou demander un remboursement </p>",
+                        "width": "fit-content",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "rich_text_styles": false,
+                        "alignment_mobile": "left"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "text_zgU7ap"
+                  ]
+                },
+                "accordion_Tyk9Jx": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Garantie",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "material_icon": "package_2"
+                  },
+                  "blocks": {
+                    "text_Vgmzmk": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Garantie 1 an</p><p>Le vendeur garantit chaque article vendu sur sacoche-velo-france.com contre les <strong>défauts de fabrication</strong> pendant <strong>1 an</strong> à compter de la réception de la commande.</p><p>Ce qui est couvert</p><p>Tout défaut de fabrication : coutures, fermetures, boucles, sangles et fixations, revêtement déperlant.</p><p>Toute caractéristique annoncée sur la fiche produit non respectée : dimensions, capacité, matériaux, déperlance, compatibilité.</p><p>Ce qui n'est pas couvert</p><p>Usure normale, mauvais usage, surcharge au-delà de la capacité annoncée, accident, mauvais montage, perte et vol.</p><p>En cas de défaut</p><p>Écrire à contact@sacoche-velo-france.com avec le numéro de commande et des photos. Après vérification : <strong>remplacement</strong> de l'article, ou <strong>remboursement</strong> si le remplacement est impossible.</p><p>Garanties légales</p><p>La présente garantie commerciale s'ajoute aux garanties légales obligatoires : garantie légale de conformité (art. L.217-3 et suivants du Code de la consommation) et garantie des vices cachés (art. 1641 et suivants du Code civil). Elle s'applique tant que la boutique sacoche-velo-france.com reste en ligne et en activité.</p>",
+                        "width": "fit-content",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "rich_text_styles": false,
+                        "alignment_mobile": "left"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "text_Vgmzmk"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_tJcRGm",
+                "accordion_gU7QYn",
+                "accordion_Tyk9Jx"
+              ]
+            }
+          },
+          "block_order": [
+            "rating_stars_Krck47",
+            "custom_code_wQrxqn",
+            "text_zLqMQw",
+            "group_pCUhCJ",
+            "group_XWYXxh",
+            "product_variant_picker_xWC3wF",
+            "product_inventory_4bCNrH",
+            "product_form_grYQk6_achat",
+            "payment_methods_khjTAV",
+            "delivery_estimation_A43yiG",
+            "custom_code_4Mmgab",
+            "accordions_KKUaHK"
+          ]
+        }
+      },
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 20,
+        "enable_sticky_add_to_cart": false,
+        "background_color": "#f8f8f8",
+        "padding-block-start": 0,
+        "padding-block-end": 0,
+        "svf_sticky_buy_buttons": true
+      }
+    },
+    "marquee_a4Mc77": {
+      "type": "marquee",
+      "disabled": true,
+      "settings": {}
+    },
+    "reviews_8P6xW3": {
+      "type": "reviews",
+      "blocks": {
+        "review_kaimbX": {
+          "type": "_review-slide",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "3",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 5,
+            "image": "shopify://shop_images/Adbf0d8dcf47249fa9e7b049e40a4a39cz_jpg_960x960q75_jpg.webp",
+            "image_ratio": "adapt",
+            "source": "uploaded",
+            "video_url": "",
+            "title": "Excellent produit !",
+            "content": "<p>je recommande vivement ce produit, la qualité est très bonne, je le recommande 👍❤️. Remarque : les petites gouttes fournies doivent être placées sur la pince, et l'autocollant doit être placé à l'endroit où vous allez fixer la base (car cela servira de base pour éviter que ça ne glisse), la livraison était également bonne, tout était très bien emballé 👍</p>",
+            "author": "A***a ",
+            "date": "",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_PAiAyA": {
+          "type": "_review-slide",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "3",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 5,
+            "image": "shopify://shop_images/A8ca6829f8931457c9a9c0a1b3edb7ae9E_jpg_960x960q75_jpg.webp",
+            "image_ratio": "adapt",
+            "source": "uploaded",
+            "video_url": "",
+            "title": "Excellent produit !",
+            "content": "<p>Je suis extrêmement satisfait et très content de cet achat, je le recommande à 1000%. Il s'adapte parfaitement à mon fatbike, et bientôt je commencerai ma longue route à travers le Pérou.</p>",
+            "author": "L*******",
+            "date": "",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_wff9qy": {
+          "type": "_review-slide",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "3",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 5,
+            "image": "shopify://shop_images/A65c67091cb9d4cd59a6ba3e0c86d6f86E_jpg_960x960q75_jpg.webp",
+            "image_ratio": "adapt",
+            "source": "uploaded",
+            "video_url": "",
+            "title": "Excellent produit !",
+            "content": "<p>Des produits excellents, je n'en reviens pas du rapport qualité-prix !</p>",
+            "author": "F*****",
+            "date": "",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_Mm4zXP": {
+          "type": "_review-slide",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "3",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 4,
+            "image": "shopify://shop_images/image.webp",
+            "image_ratio": "adapt",
+            "source": "uploaded",
+            "video_url": "",
+            "title": "Excellent produit !",
+            "content": "<p>Le cadre est en métal, les sacs sont \"caoutchoutés\", du moins c'est ce que l'on dirait, mais ils sont définitivement étanches. Leur qualité est bonne, je dirais même très bonne. Le cadre n'est pas mauvais, mais pas parfait. Je lui donnerais 4/5, mais il remplit parfaitement toutes ses fonctions. Le mien est arrivé rayé, mais c'est probablement dû au transport, il est aussi un peu tordu, donc 4/5. Je vais réfléchir à la possibilité de le signaler, mais je recommande quand même l'achat.<br/><br/></p>",
+            "author": "M*****",
+            "date": "",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_egpxHK": {
+          "type": "_review-slide",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "3",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 5,
+            "image": "shopify://shop_images/image_1_4e5d61c5-2fbe-46fb-97e9-432d075beed0.webp",
+            "image_ratio": "adapt",
+            "source": "uploaded",
+            "video_url": "",
+            "title": "Excellent produit !",
+            "content": "<p>Le produit que j'ai reçu était exactement comme décrit sur la page et il n'y avait aucun problème particulier. La livraison était également dans les délais.</p>",
+            "author": "P*****e",
+            "date": "",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_EUr4LH": {
+          "type": "_review-slide",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "3",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 5,
+            "image": "shopify://shop_images/image_2.webp",
+            "image_ratio": "adapt",
+            "source": "uploaded",
+            "video_url": "",
+            "title": "Excellent produit !",
+            "content": "<p>Ils ont l'air d'être de très bonne facture. L'ensemble comprend tous les accessoires nécessaires pour le montage de la fourche avant. Exécution précise de tous les éléments. Sacs bien collés et cousus.</p>",
+            "author": "P***",
+            "date": "",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_wKQMme": {
+          "type": "_review-slide",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "3",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 5,
+            "image": "shopify://shop_images/image_3.webp",
+            "image_ratio": "adapt",
+            "source": "uploaded",
+            "video_url": "",
+            "title": "Excellent produit !",
+            "content": "<p>très bien</p>",
+            "author": "P***pe",
+            "date": "",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_Kgp7a7": {
+          "type": "_review-slide",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "3",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 5,
+            "image": "shopify://shop_images/image_4.webp",
+            "image_ratio": "adapt",
+            "source": "uploaded",
+            "video_url": "",
+            "title": "Excellent produit !",
+            "content": "<p>Ils ont l'air vraiment bien, je ne les ai pas encore installés</p>",
+            "author": "L*****",
+            "date": "",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "title": {
+          "type": "text",
+          "static": true,
+          "settings": {
+            "text": "<p>Avis</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h3",
+            "padding-block-start": 0,
+            "padding-block-end": 30,
+            "rich_text_styles": false,
+            "alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "review_kaimbX",
+        "review_PAiAyA",
+        "review_slide_wff9qy",
+        "review_slide_Mm4zXP",
+        "review_slide_egpxHK",
+        "review_slide_EUr4LH",
+        "review_slide_wKQMme",
+        "review_slide_Kgp7a7"
+      ],
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "anchor": "reviews",
+        "color_scheme": "scheme-1",
+        "layout_type": "list",
+        "grid_columns": 4,
+        "grid_columns_mobile": "1",
+        "slider_items": 4,
+        "slider_items_mobile": "1",
+        "show_arrows": false,
+        "arrows_button_style": "secondary",
+        "show_pagination": true,
+        "rewind": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "additional_class": ""
+      }
+    },
+    "custom_code_M7r7wp": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% comment %} Section : Bande défilante marques vélo — logos en fichiers WebP (assets du thème) {% endcomment %}\n\n<style>\n  .brands-ticker {\n    background: #f6f6f6;\n    padding: 36px 0 28px;\n    text-align: center;\n    overflow: hidden;\n  }\n\n  .brands-ticker__label {\n    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\n    font-size: 11px;\n    font-weight: 600;\n    letter-spacing: 0.15em;\n    text-transform: uppercase;\n    color: #999;\n    margin-bottom: 28px;\n  }\n\n  .brands-ticker__track-wrapper {\n    overflow: hidden;\n    position: relative;\n    width: 100%;\n  }\n\n  .brands-ticker__track-wrapper::before,\n  .brands-ticker__track-wrapper::after {\n    content: '';\n    position: absolute;\n    top: 0;\n    width: 100px;\n    height: 100%;\n    z-index: 2;\n    pointer-events: none;\n  }\n\n  .brands-ticker__track-wrapper::before {\n    left: 0;\n    background: linear-gradient(to right, #f6f6f6 0%, transparent 100%);\n  }\n\n  .brands-ticker__track-wrapper::after {\n    right: 0;\n    background: linear-gradient(to left, #f6f6f6 0%, transparent 100%);\n  }\n\n  .brands-ticker__track {\n    display: flex;\n    align-items: center;\n    gap: 72px;\n    width: max-content;\n    animation: ticker-scroll 32s linear infinite;\n    padding: 8px 0;\n  }\n\n  .brands-ticker__track:hover {\n    animation-play-state: paused;\n  }\n\n  .brands-ticker__item {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-shrink: 0;\n    transition: transform 0.3s ease, opacity 0.3s ease;\n    opacity: 0.85;\n    /* Pas de height fixe — on laisse le SVG dicter sa taille */\n  }\n\n  .brands-ticker__item:hover {\n    opacity: 1;\n    transform: scale(1.05);\n  }\n\n  .brands-ticker__item img {\n    height: var(--logo-height);\n    width: auto;\n    max-width: none;\n    display: block;\n  }\n\n  @keyframes ticker-scroll {\n    0%   { transform: translateX(0); }\n    100% { transform: translateX(-50%); }\n  }\n\n  @media (max-width: 768px) {\n    .brands-ticker__track {\n      gap: 48px;\n      animation-duration: 22s;\n    }\n    .brands-ticker__item img {\n      height: calc(var(--logo-height) * 0.75);\n    }\n  }\n</style>\n\n<div class=\"brands-ticker\">\n  <div class=\"brands-ticker__track-wrapper\">\n    <div class=\"brands-ticker__track\">\n\n      <div class=\"brands-ticker__item\">\n        <img src=\"{{ 'brand-trek.webp' | asset_url }}\" alt=\"Trek\" width=\"188\" height=\"24\" style=\"--logo-height: 24px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\">\n        <img src=\"{{ 'brand-specialized.webp' | asset_url }}\" alt=\"Specialized\" width=\"141\" height=\"58\" style=\"--logo-height: 58px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\">\n        <img src=\"{{ 'brand-cannondale.webp' | asset_url }}\" alt=\"Cannondale\" width=\"76\" height=\"62\" style=\"--logo-height: 62px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\">\n        <img src=\"{{ 'brand-canyon.webp' | asset_url }}\" alt=\"Canyon\" width=\"171\" height=\"24\" style=\"--logo-height: 24px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\">\n        <img src=\"{{ 'brand-kona.webp' | asset_url }}\" alt=\"Kona\" width=\"185\" height=\"26\" style=\"--logo-height: 26px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\">\n        <img src=\"{{ 'brand-lapierre.webp' | asset_url }}\" alt=\"Lapierre\" width=\"121\" height=\"54\" style=\"--logo-height: 54px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\">\n        <img src=\"{{ 'brand-origine.webp' | asset_url }}\" alt=\"Origine\" width=\"189\" height=\"20\" style=\"--logo-height: 20px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\">\n        <img src=\"{{ 'brand-salsa.webp' | asset_url }}\" alt=\"Salsa\" width=\"147\" height=\"38\" style=\"--logo-height: 38px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\">\n        <img src=\"{{ 'brand-open.webp' | asset_url }}\" alt=\"Open\" width=\"159\" height=\"40\" style=\"--logo-height: 40px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      {% comment %} Duplication pour la boucle infinie {% endcomment %}\n\n      <div class=\"brands-ticker__item\" aria-hidden=\"true\">\n        <img src=\"{{ 'brand-trek.webp' | asset_url }}\" alt=\"\" width=\"188\" height=\"24\" style=\"--logo-height: 24px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\" aria-hidden=\"true\">\n        <img src=\"{{ 'brand-specialized.webp' | asset_url }}\" alt=\"\" width=\"141\" height=\"58\" style=\"--logo-height: 58px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\" aria-hidden=\"true\">\n        <img src=\"{{ 'brand-cannondale.webp' | asset_url }}\" alt=\"\" width=\"76\" height=\"62\" style=\"--logo-height: 62px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\" aria-hidden=\"true\">\n        <img src=\"{{ 'brand-canyon.webp' | asset_url }}\" alt=\"\" width=\"171\" height=\"24\" style=\"--logo-height: 24px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\" aria-hidden=\"true\">\n        <img src=\"{{ 'brand-kona.webp' | asset_url }}\" alt=\"\" width=\"185\" height=\"26\" style=\"--logo-height: 26px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\" aria-hidden=\"true\">\n        <img src=\"{{ 'brand-lapierre.webp' | asset_url }}\" alt=\"\" width=\"121\" height=\"54\" style=\"--logo-height: 54px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\" aria-hidden=\"true\">\n        <img src=\"{{ 'brand-origine.webp' | asset_url }}\" alt=\"\" width=\"189\" height=\"20\" style=\"--logo-height: 20px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\" aria-hidden=\"true\">\n        <img src=\"{{ 'brand-salsa.webp' | asset_url }}\" alt=\"\" width=\"147\" height=\"38\" style=\"--logo-height: 38px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"brands-ticker__item\" aria-hidden=\"true\">\n        <img src=\"{{ 'brand-open.webp' | asset_url }}\" alt=\"\" width=\"159\" height=\"40\" style=\"--logo-height: 40px\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n    </div>\n  </div>\n</div>",
+        "section_width": "full-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "custom_section_N4dCpg": {
+      "type": "section",
+      "blocks": {
+        "image_r6nAhG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sacoche_velo_couture.webp",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fill",
+            "border_radius": 16,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          }
+        },
+        "group_jGa7gL": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 15,
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fill",
+            "padding-block-start": 10,
+            "padding-block-end": 10
+          },
+          "blocks": {
+            "text_Yb7KBi": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Des créations pour les passionnés.</p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h3",
+                "padding-block-start": 0,
+                "padding-block-end": 20,
+                "rich_text_styles": false,
+                "alignment_mobile": "left"
+              }
+            },
+            "group_KJQBFf": {
+              "type": "group",
+              "settings": {
+                "content_direction": "row",
+                "vertical_on_mobile": false,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "gap": 10,
+                "width": "fill",
+                "width_mobile": "fill",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "custom_class": "svf-row-mobile"
+              },
+              "blocks": {
+                "group_H9kchf": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "flex-start",
+                    "gap": 5,
+                    "width": "fill",
+                    "width_mobile": "fill",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0
+                  },
+                  "blocks": {
+                    "text_JY6qRm": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Transportez les affaires essentielles plus facilement, que la sortie soit courte, sportive ou plus chargée.</p><p>Moins d’encombrement, moins de poids sur le dos, une organisation plus fluide : chaque sacoche vélo aide à mieux répartir les affaires selon le trajet, le vélo et le besoin du moment.</p>",
+                        "width": "fit-content",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "rich_text_styles": false,
+                        "alignment_mobile": "left"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "text_JY6qRm"
+                  ]
+                }
+              },
+              "block_order": [
+                "group_H9kchf"
+              ]
+            },
+            "group_cnBWtN": {
+              "type": "group",
+              "settings": {
+                "content_direction": "row",
+                "vertical_on_mobile": false,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "gap": 10,
+                "width": "fill",
+                "width_mobile": "fill",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "custom_class": "svf-row-mobile"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_Yb7KBi",
+            "group_KJQBFf",
+            "group_cnBWtN"
+          ]
+        }
+      },
+      "block_order": [
+        "image_r6nAhG",
+        "group_jGa7gL"
+      ],
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "gap": 30,
+        "section_width": "page-width",
+        "padding-block-start": 60,
+        "padding-block-end": 60,
+        "gap_mobile": 10,
+        "custom_class": "svf-mobile-start"
+      }
+    },
+    "comparison_table_KD8GmY": {
+      "type": "comparison-table",
+      "blocks": {
+        "comparison_table_row_DP7yUh": {
+          "type": "_comparison-table-row",
+          "settings": {},
+          "blocks": {
+            "comparison_table_data_jgCF9V": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {}
+            },
+            "comparison_table_data_P9W9xG": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "logo_fL87zQ": {
+                  "type": "logo",
+                  "settings": {
+                    "inverse": false,
+                    "unit": "pixel",
+                    "pixel_height": 25,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0
+                  }
+                }
+              },
+              "block_order": [
+                "logo_fL87zQ"
+              ]
+            },
+            "comparison_table_data_UFtx7Y": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "text_6xncjp": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>Produit \"classique\"</strong></p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "center",
+                    "type_preset": "paragraph",
+                    "text_color": "#ffffff",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "rich_text_styles": false,
+                    "alignment_mobile": "center"
+                  }
+                }
+              },
+              "block_order": [
+                "text_6xncjp"
+              ]
+            }
+          },
+          "block_order": [
+            "comparison_table_data_jgCF9V",
+            "comparison_table_data_P9W9xG",
+            "comparison_table_data_UFtx7Y"
+          ]
+        },
+        "comparison_table_row_DWaNhB": {
+          "type": "_comparison-table-row",
+          "settings": {},
+          "blocks": {
+            "comparison_table_data_t8mqjm": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "text_yH9jD4": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>La marque la mieux notée</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "text_color": "#ffffff",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "rich_text_styles": false,
+                    "alignment_mobile": "left"
+                  }
+                }
+              },
+              "block_order": [
+                "text_yH9jD4"
+              ]
+            },
+            "comparison_table_data_aNiWCp": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "rating_stars_AgMFgN": {
+                  "type": "rating-stars",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "product": "",
+                    "hide_rating_when_no_reviews": true,
+                    "rating": 5,
+                    "show_note": true,
+                    "show_review_count": true,
+                    "review_count": 100,
+                    "link": "",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_stars_AgMFgN"
+              ]
+            },
+            "comparison_table_data_RUt97i": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "rating_stars_VNK9JG": {
+                  "type": "rating-stars",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "product": "",
+                    "hide_rating_when_no_reviews": true,
+                    "rating": 4,
+                    "show_note": true,
+                    "show_review_count": true,
+                    "review_count": 40,
+                    "link": "",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_stars_VNK9JG"
+              ]
+            }
+          },
+          "block_order": [
+            "comparison_table_data_t8mqjm",
+            "comparison_table_data_aNiWCp",
+            "comparison_table_data_RUt97i"
+          ]
+        },
+        "comparison_table_row_KFUHRe": {
+          "type": "_comparison-table-row",
+          "settings": {},
+          "blocks": {
+            "comparison_table_data_iWbK7z": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "text_BjGCPK": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Argument économique</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "text_color": "#ffffff",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "rich_text_styles": false,
+                    "alignment_mobile": "left"
+                  }
+                }
+              },
+              "block_order": [
+                "text_BjGCPK"
+              ]
+            },
+            "comparison_table_data_CnDLnT": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "icon_EfNHeN": {
+                  "type": "material-icon",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "check",
+                    "icon_custom": "",
+                    "icon_size": 32,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_EfNHeN"
+              ]
+            },
+            "comparison_table_data_te3N3p": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "icon_EyTVEE": {
+                  "type": "material-icon",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "close",
+                    "icon_custom": "",
+                    "icon_size": 32,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_EyTVEE"
+              ]
+            }
+          },
+          "block_order": [
+            "comparison_table_data_iWbK7z",
+            "comparison_table_data_CnDLnT",
+            "comparison_table_data_te3N3p"
+          ]
+        },
+        "comparison_table_row_GzJiaF": {
+          "type": "_comparison-table-row",
+          "settings": {},
+          "blocks": {
+            "comparison_table_data_Rk7zpC": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "text_rEndA7": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Argument écologique</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "text_color": "#ffffff",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "rich_text_styles": false,
+                    "alignment_mobile": "left"
+                  }
+                }
+              },
+              "block_order": [
+                "text_rEndA7"
+              ]
+            },
+            "comparison_table_data_iGPefg": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "icon_iK4KqG": {
+                  "type": "material-icon",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "check",
+                    "icon_custom": "",
+                    "icon_size": 32,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_iK4KqG"
+              ]
+            },
+            "comparison_table_data_k4ercW": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "icon_CRgXzx": {
+                  "type": "material-icon",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "close",
+                    "icon_custom": "",
+                    "icon_size": 32,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_CRgXzx"
+              ]
+            }
+          },
+          "block_order": [
+            "comparison_table_data_Rk7zpC",
+            "comparison_table_data_iGPefg",
+            "comparison_table_data_k4ercW"
+          ]
+        },
+        "comparison_table_row_QFj4fW": {
+          "type": "_comparison-table-row",
+          "settings": {},
+          "blocks": {
+            "comparison_table_data_GBckd6": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "text_gbdfqx": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Argument pratique</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "text_color": "#ffffff",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "rich_text_styles": false,
+                    "alignment_mobile": "left"
+                  }
+                }
+              },
+              "block_order": [
+                "text_gbdfqx"
+              ]
+            },
+            "comparison_table_data_EJEPCA": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "icon_rVED7K": {
+                  "type": "material-icon",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "check",
+                    "icon_custom": "",
+                    "icon_size": 32,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_rVED7K"
+              ]
+            },
+            "comparison_table_data_kdmFD9": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "icon_9Ny9iq": {
+                  "type": "material-icon",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "close",
+                    "icon_custom": "",
+                    "icon_size": 32,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_9Ny9iq"
+              ]
+            }
+          },
+          "block_order": [
+            "comparison_table_data_GBckd6",
+            "comparison_table_data_EJEPCA",
+            "comparison_table_data_kdmFD9"
+          ]
+        },
+        "comparison_table_row_QGRDhi": {
+          "type": "_comparison-table-row",
+          "settings": {},
+          "blocks": {
+            "comparison_table_data_V96fkL": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "text_C9fXpp": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Argument technique</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "text_color": "#ffffff",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "rich_text_styles": false,
+                    "alignment_mobile": "left"
+                  }
+                }
+              },
+              "block_order": [
+                "text_C9fXpp"
+              ]
+            },
+            "comparison_table_data_3kdAGh": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "icon_g9tXwC": {
+                  "type": "material-icon",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "check",
+                    "icon_custom": "",
+                    "icon_size": 32,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_g9tXwC"
+              ]
+            },
+            "comparison_table_data_jfWEpQ": {
+              "type": "_comparison-table-data",
+              "settings": {},
+              "blocks": {
+                "icon_YYfiPk": {
+                  "type": "material-icon",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "close",
+                    "icon_custom": "",
+                    "icon_size": 32,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_YYfiPk"
+              ]
+            }
+          },
+          "block_order": [
+            "comparison_table_data_V96fkL",
+            "comparison_table_data_3kdAGh",
+            "comparison_table_data_jfWEpQ"
+          ]
+        },
+        "title": {
+          "type": "text",
+          "static": true,
+          "settings": {
+            "text": "<h3>Pourquoi choisir ce produit ?</h3>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h3",
+            "text_color": "#ffffff",
+            "padding-block-start": 0,
+            "padding-block-end": 40,
+            "rich_text_styles": false,
+            "alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_table_row_DP7yUh",
+        "comparison_table_row_DWaNhB",
+        "comparison_table_row_KFUHRe",
+        "comparison_table_row_GzJiaF",
+        "comparison_table_row_QFj4fW",
+        "comparison_table_row_QGRDhi"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "section_width": "narrow",
+        "color_scheme": "scheme-dc39c57a-5dca-4d27-aa18-4454c1b54ee4",
+        "color_scheme_table": "scheme-dc39c57a-5dca-4d27-aa18-4454c1b54ee4",
+        "cell_min_width_mobile": 120,
+        "highlighted_column": 2,
+        "color_highlighted_column": "#000000",
+        "color_highlighted_background_column": "#f8f8f8",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "image_banner_XAGBnP": {
+      "type": "hero",
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/image_1_1_f3ce3675-8135-4ba2-bc6a-85f616a01804.webp",
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "custom",
+        "section_height_custom": 90,
+        "toggle_overlay": true,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "padding-block-start": 40,
+        "padding-block-end": 40,
+        "height_vh": 90,
+        "height_vh_mobile": 90,
+        "fit_image": false,
+        "outer_padding_top": 60,
+        "outer_padding_bottom": 60,
+        "custom_class": "svf-hero-contained"
+      }
+    },
+    "custom_code_7rf9im": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Syne:wght@700&display=swap\" rel=\"stylesheet\">\n\n<style>\n  .svf-ugc {\n    background: #252525;\n    padding: 56px 0;\n    overflow: hidden;\n  }\n\n  .svf-ugc__header {\n    text-align: left;\n    margin-bottom: 36px;\n    padding: 0 40px;\n  }\n\n  .svf-ugc__eyebrow {\n    font-family: 'Syne', 'Arial Black', sans-serif;\n    font-size: 10px;\n    font-weight: 700;\n    letter-spacing: 0.22em;\n    text-transform: uppercase;\n    color: #fbcb05;\n    margin-bottom: 10px;\n  }\n\n  .svf-ugc__title {\n    font-family: 'DM Sans', sans-serif;\n    font-weight: 700;\n    font-size: clamp(28px, 4vw, 44px);\n    line-height: 1.1;\n    color: #ffffff;\n    letter-spacing: -0.02em;\n  }\n\n  .svf-ugc__title em {\n    font-style: normal;\n    color: #fbcb05;\n  }\n\n  .svf-ugc__track-wrapper {\n    position: relative;\n    width: 100%;\n    overflow: hidden;\n  }\n\n  .svf-ugc__track-wrapper::before,\n  .svf-ugc__track-wrapper::after {\n    content: '';\n    position: absolute;\n    top: 0;\n    width: 120px;\n    height: 100%;\n    z-index: 2;\n    pointer-events: none;\n  }\n\n  .svf-ugc__track-wrapper::before {\n    left: 0;\n    background: linear-gradient(to right, #252525 0%, transparent 100%);\n  }\n\n  .svf-ugc__track-wrapper::after {\n    right: 0;\n    background: linear-gradient(to left, #252525 0%, transparent 100%);\n  }\n\n  .svf-ugc__track {\n    display: flex;\n    gap: 16px;\n    width: max-content;\n    animation: svf-scroll 38s linear infinite;\n  }\n\n  .svf-ugc__track:hover {\n    animation-play-state: paused;\n  }\n\n  .svf-ugc__item {\n    width: 280px;\n    height: 280px;\n    border-radius: 4px;\n    overflow: hidden;\n    flex-shrink: 0;\n    position: relative;\n  }\n\n  .svf-ugc__item img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    display: block;\n    transition: transform 0.4s ease;\n    filter: brightness(0.92);\n  }\n\n  .svf-ugc__item:hover img {\n    transform: scale(1.04);\n    filter: brightness(1);\n  }\n\n  .svf-ugc__item::after {\n    content: '';\n    position: absolute;\n    inset: 0;\n    border: 2px solid transparent;\n    border-radius: 4px;\n    transition: border-color 0.3s;\n  }\n\n  .svf-ugc__item:hover::after {\n    border-color: #fbcb05;\n  }\n\n  @keyframes svf-scroll {\n    0%   { transform: translateX(0); }\n    100% { transform: translateX(-50%); }\n  }\n\n  @media (prefers-reduced-motion: reduce) {\n    .svf-ugc__track {\n      animation: none;\n    }\n    .svf-ugc__track-wrapper {\n      overflow-x: auto;\n    }\n  }\n\n  @media (max-width: 600px) {\n    .svf-ugc {\n      padding: 40px 0;\n    }\n\n    .svf-ugc__item {\n      width: 220px;\n      height: 220px;\n    }\n\n    .svf-ugc__track-wrapper::before,\n    .svf-ugc__track-wrapper::after {\n      width: 60px;\n    }\n\n    .svf-ugc__track {\n      animation-duration: 27s;\n    }\n  }\n</style>\n\n<div class=\"svf-ugc\">\n\n  <div class=\"svf-ugc__header\">\n    <h2 class=\"svf-ugc__title\">Ils se sont <em>&eacute;quip&eacute;s</em></h2>\n  </div>\n\n  <div class=\"svf-ugc__track-wrapper\">\n    <div class=\"svf-ugc__track\">\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/0365fe4e-2924-4bad-90a5-b1ce575fd0e8.webp?v=1780967183\" alt=\"Vélo noir équipé d'une sacoche latérale jaune\" width=\"280\" height=\"280\" loading=\"eager\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/A271ad4f5b8f74e62bbc63e3568a33aacm_jpg_960x960q75_jpg.webp?v=1786337793\" alt=\"Vélo équipé d'une sacoche de bikepacking\" width=\"280\" height=\"280\" loading=\"eager\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/S75d128e3fcad448391c2dbbf4c5eca81s_jpg_960x960q75_jpg.webp?v=1778003230\" alt=\"Sacoche fixée sur la fourche avant du vélo\" width=\"280\" height=\"280\" loading=\"eager\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/Ab0048275c1f04548bee997fc4c1d20ce3_jpg_960x960q75_jpg.webp?v=1778003230\" alt=\"Vélo équipé d'une sacoche de transport\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/image_75419c8b-a6e9-4f34-be6d-65dc62716aed.webp?v=1786143304\" alt=\"Sacoche de vélo installée sur le cadre\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/Sbaaf3462ece340749f7168d0f94b8aecT_jpg_960x960q75_jpg.webp?v=1778003230\" alt=\"Vélo avec sacoche stationné en intérieur\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/Ab3b1e5c9da1346a68a0b7364e79040d0D_jpg_960x960q75_jpg.webp?v=1778003155\" alt=\"Sacoche de selle noire sur vélo de route\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/image_20.webp?v=1785981520\" alt=\"Vélo chargé pour une sortie bikepacking\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/0365fe4e-2924-4bad-90a5-b1ce575fd0e8.webp?v=1780967183\" alt=\"\" aria-hidden=\"true\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/A271ad4f5b8f74e62bbc63e3568a33aacm_jpg_960x960q75_jpg.webp?v=1786337793\" alt=\"\" aria-hidden=\"true\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/S75d128e3fcad448391c2dbbf4c5eca81s_jpg_960x960q75_jpg.webp?v=1778003230\" alt=\"\" aria-hidden=\"true\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/Ab0048275c1f04548bee997fc4c1d20ce3_jpg_960x960q75_jpg.webp?v=1778003230\" alt=\"\" aria-hidden=\"true\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/image_75419c8b-a6e9-4f34-be6d-65dc62716aed.webp?v=1786143304\" alt=\"\" aria-hidden=\"true\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/Sbaaf3462ece340749f7168d0f94b8aecT_jpg_960x960q75_jpg.webp?v=1778003230\" alt=\"\" aria-hidden=\"true\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/Ab3b1e5c9da1346a68a0b7364e79040d0D_jpg_960x960q75_jpg.webp?v=1778003155\" alt=\"\" aria-hidden=\"true\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n      <div class=\"svf-ugc__item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1007/4338/1379/files/image_20.webp?v=1785981520\" alt=\"\" aria-hidden=\"true\" width=\"280\" height=\"280\" loading=\"lazy\" decoding=\"async\">\n      </div>\n\n    </div>\n  </div>\n\n</div>",
+        "section_width": "full-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "product_recommendations_G8mJVG": {
+      "type": "product-recommendations",
+      "blocks": {
+        "title": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vous aimerez aussi</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h3",
+            "padding-block-start": 0,
+            "padding-block-end": 30,
+            "rich_text_styles": false,
+            "alignment_mobile": "left"
+          }
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 15
+          },
+          "blocks": {
+            "product_card_media_gallery_L3zV7a": {
+              "type": "_product-card-gallery",
+              "settings": {
+                "image_ratio": "square",
+                "border_radius": 16
+              }
+            },
+            "product_card_group_EcgVgX": {
+              "type": "_product-card-group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 5,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {
+                "text_cxYhee": {
+                  "type": "product-title",
+                  "settings": {
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "heading_tag": "h2",
+                    "alignment_mobile": "left",
+                    "font_weight": "500"
+                  }
+                },
+                "product_price_6F6rax": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left",
+                    "sales_badge": "percentage"
+                  }
+                },
+                "product_card_swatches_w3Vawj": {
+                  "type": "swatches",
+                  "settings": {
+                    "hide_padding": true
+                  }
+                },
+                "rating_stars_nz7WzY": {
+                  "type": "rating-stars",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "product": "{{ closest.product }}",
+                    "hide_rating_when_no_reviews": true,
+                    "rating": 4.5,
+                    "show_note": true,
+                    "show_review_count": true,
+                    "review_count": 123,
+                    "link": "",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_cxYhee",
+                "product_price_6F6rax",
+                "product_card_swatches_w3Vawj",
+                "rating_stars_nz7WzY"
+              ]
+            }
+          },
+          "block_order": [
+            "product_card_media_gallery_L3zV7a",
+            "product_card_group_EcgVgX"
+          ]
+        }
+      },
+      "block_order": [
+        "title"
+      ],
+      "settings": {
+        "product": "{{ closest.product }}",
+        "recommendation_type": "related",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 4,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 16,
+        "rows_gap": 32,
+        "section_width": "page-width",
+        "gap": 0,
+        "padding-block-start": 60,
+        "padding-block-end": 60
+      }
+    },
+    "custom_section_x8eXjU": {
+      "type": "section",
+      "blocks": {
+        "group_KatzAk": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 10,
+            "width": "custom",
+            "custom_width": 55,
+            "width_mobile": "fill",
+            "background_color": "#f6f6f6",
+            "border_radius": 16,
+            "padding-block-start": 30,
+            "padding-block-end": 30,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20,
+            "padding_inline_mobile": 30,
+            "custom_class": "svf-mobile-start svf-card-group"
+          },
+          "blocks": {
+            "text_qctGtF": {
+              "type": "text",
+              "settings": {
+                "text": "<h4>Besoin d'aide ?</h4>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "h5",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "rich_text_styles": false,
+                "alignment_mobile": "left"
+              }
+            },
+            "button_xgGMBG": {
+              "type": "button",
+              "settings": {
+                "label": "Contactez notre support",
+                "link": "shopify://pages/contact",
+                "open_in_new_tab": true,
+                "style_class": "button",
+                "size": "full"
+              }
+            },
+            "button_BE8L9z": {
+              "type": "button",
+              "settings": {
+                "label": "Consultez notre aide",
+                "link": "shopify://pages/guide-sacoche-velo",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
+                "size": "full"
+              }
+            }
+          },
+          "block_order": [
+            "text_qctGtF",
+            "button_xgGMBG",
+            "button_BE8L9z"
+          ]
+        },
+        "group_bHwTyd": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 10,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {
+            "text_NRfxNN": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Questions fréquentes</h3>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h3",
+                "text_color": "#ffffff",
+                "padding-block-start": 0,
+                "padding-block-end": 10,
+                "rich_text_styles": false,
+                "alignment_mobile": "left"
+              }
+            },
+            "accordions_xderph": {
+              "type": "accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "type_preset": "paragraph",
+                "text_color": "#ffffff",
+                "custom_class": "svf-accordion--small"
+              },
+              "blocks": {
+                "accordion_KpYCBj": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Comment fixer une sacoche vélo sans porte-bagages ?",
+                    "open_by_default": false,
+                    "icon": "none"
+                  },
+                  "blocks": {
+                    "text_iTxgwm": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>La plupart des sacoches de guidon, de selle et de cadre se fixent directement via des sangles velcro réglables. Pas besoin de rack : elles sont compatibles avec les vélos gravel, VTT, route et VTC.</p>",
+                        "width": "fit-content",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "text_color": "#ffffff",
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "rich_text_styles": false,
+                        "alignment_mobile": "left"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "text_iTxgwm"
+                  ]
+                },
+                "accordion_eCATbP": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Quels sont les délais de livraison ?",
+                    "open_by_default": false,
+                    "icon": "none"
+                  },
+                  "blocks": {
+                    "text_6RTikm": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Nous expédions vos commandes sous 24 à 48h ouvrées. La livraison est ensuite assurée en 7 à 16 jours ouvrés selon votre adresse. La livraison est offerte </p>",
+                        "width": "fit-content",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "text_color": "#ffffff",
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "rich_text_styles": false,
+                        "alignment_mobile": "left"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "text_6RTikm"
+                  ]
+                },
+                "accordion_nxBNYX": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Puis-je retourner ma sacoche si elle ne me convient pas ?",
+                    "open_by_default": false,
+                    "icon": "none"
+                  },
+                  "blocks": {
+                    "text_KjfHmr": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Oui. Vous disposez de 14 jours après réception pour nous retourner votre article. Il doit être dans son état d'origine. Le remboursement est effectué sous 5 à 7 jours ouvrés après réception du retour.</p>",
+                        "width": "fit-content",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "text_color": "#ffffff",
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "rich_text_styles": false,
+                        "alignment_mobile": "left"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "text_KjfHmr"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_KpYCBj",
+                "accordion_eCATbP",
+                "accordion_nxBNYX"
+              ]
+            }
+          },
+          "block_order": [
+            "text_NRfxNN",
+            "accordions_xderph"
+          ]
+        }
+      },
+      "block_order": [
+        "group_KatzAk",
+        "group_bHwTyd"
+      ],
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-start",
+        "gap": 50,
+        "section_width": "page-width",
+        "background_color": "#000000",
+        "padding-block-start": 60,
+        "padding-block-end": 60,
+        "mobile_direction": "column-reverse",
+        "gap_mobile": 20,
+        "custom_class": "svf-mobile-start"
+      }
+    },
+    "custom_section_yUQJNb": {
+      "type": "section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "flex-start",
+        "gap": 20,
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "marquee_a4Mc77",
+    "reviews_8P6xW3",
+    "custom_code_M7r7wp",
+    "custom_section_N4dCpg",
+    "comparison_table_KD8GmY",
+    "image_banner_XAGBnP",
+    "custom_code_7rf9im",
+    "product_recommendations_G8mJVG",
+    "custom_section_x8eXjU",
+    "custom_section_yUQJNb"
+  ]
+}

@@ -1,0 +1,22 @@
+{%- doc -%}
+  Affiche le libellé d'un filtre, traduit en français pour les filtres par défaut de Shopify
+  (repris du thème d'origine).
+
+  @param {object} filter - Le filtre de la collection
+
+  @example
+  {% render 'svf-filter-label', filter: filter %}
+{%- enddoc -%}
+
+{%- liquid
+  assign filter_label = filter.label
+  if request.locale.iso_code == 'fr'
+    case filter.param_name
+      when 'filter.v.availability'
+        assign filter_label = 'Disponibilité'
+      when 'filter.v.price'
+        assign filter_label = 'Prix'
+    endcase
+  endif
+-%}
+{{- filter_label | escape -}}
