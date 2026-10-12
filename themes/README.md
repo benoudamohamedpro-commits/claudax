@@ -26,6 +26,10 @@ Structure seule : code, disposition des sections et blocs de chaque page, régla
 - avis (section désactivée), sections Liquid personnalisé, blocs d'apps, logo, favicon, logos de marques vélo
 Les réglages retirés reprennent leur valeur par défaut d'Horizon.
 
+Ajout : section « Bande damier » (`nbr/sections/damier.liquid`, damier noir et blanc en CSS, sans image),
+à la place de la section « Ils se sont équipés » sur l'accueil et la fiche produit. Réglable dans l'éditeur :
+couleurs, taille des cases (66 px ordinateur, 40 px mobile par défaut), nombre de rangées (2).
+
 Couleurs :
 - jaune `#fcdc00` / `#fbcb05` → rouge `#e10600` ; texte posé sur ce rouge → blanc (contraste 4,97:1, WCAG AA)
 - texte et bordures rouges sur fond noir (bandeau d'annonce) → `#ff2d20` (5,65:1 ; `#e10600` n'y fait que 4,23:1)

@@ -9,7 +9,8 @@
 2. Structure seule : garde le code, la disposition des sections et blocs et leurs réglages de style ;
 retire le contenu de Sacoche Vélo France (templates de ses produits et collections, textes, images,
 liens, produits et collections choisis, avis, Liquid personnalisé, apps, logos de marques). Les
-réglages retirés reprennent leur valeur par défaut d'Horizon.
+réglages retirés reprennent leur valeur par défaut d'Horizon. La section « Ils se sont équipés » est
+remplacée par la bande damier (nbr/sections/damier.liquid, copié par-dessus le thème).
 
 Usage : python3 build-nbr.py horizon-svf horizon-nbr.zip
 """
@@ -109,6 +110,8 @@ CONTENT_TEXT_KEYS = {
 }
 SHOP_TEXT = re.compile(r"sacoche|v[ée]lo|porte-bagage|€|\?", re.I)
 REMOVED_SECTIONS = {"custom-liquid"}
+# La section « Ils se sont équipés » (Liquid personnalisé svf-ugc) laisse place à la bande damier.
+UGC_SECTION = "svf-ugc"
 DISABLED_SECTIONS = {"reviews"}
 REMOVED_SETTINGS = {"logo", "logo_inverse", "favicon", "promo_end_date"}
 REMOVED_ASSETS = re.compile(r"brand-.*\.webp|sacoche-guidon-velo-hover\.png")
@@ -185,6 +188,9 @@ def strip_blocks(node, parent_schema, schemas):
 def strip_page(path, schemas):
     data = load_json(path)
     sections = data["sections"]
+    for section_id, section in sections.items():
+        if section["type"] == "custom-liquid" and UGC_SECTION in section["settings"].get("custom_liquid", ""):
+            sections[section_id] = {"type": "damier", "settings": {}}
     for section_id in [
         i for i, s in sections.items() if s["type"] in REMOVED_SECTIONS or s["type"].startswith("shopify://")
     ]:
@@ -222,6 +228,7 @@ def strip_content(root):
 
 def main(src, out):
     src = Path(src)
+    overlay = Path(__file__).parent / "nbr"
     with tempfile.TemporaryDirectory() as tmp:
         dst = Path(tmp) / "theme"
         shutil.copytree(src, dst)
@@ -239,6 +246,7 @@ def main(src, out):
         bar.write_text(sub_once(bar.read_text(), "#fbcb05 var(--fill)", f"{RED} var(--fill)", bar))
 
         strip_content(dst)
+        shutil.copytree(overlay, dst, dirs_exist_ok=True)
 
         with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as zf:
             for path in sorted(dst.rglob("*")):
