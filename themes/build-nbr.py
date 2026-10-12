@@ -11,6 +11,7 @@ retire le contenu de Sacoche Vélo France (templates de ses produits et collecti
 liens, produits et collections choisis, avis, Liquid personnalisé, apps, logos de marques). Les
 réglages retirés reprennent leur valeur par défaut d'Horizon. La section « Ils se sont équipés » est
 remplacée par la bande damier (nbr/sections/damier.liquid, copié par-dessus le thème).
+Les sections de nbr/append/templates/ sont ajoutées à la fin des templates correspondants.
 
 Usage : python3 build-nbr.py horizon-svf horizon-nbr.zip
 """
@@ -226,6 +227,16 @@ def strip_content(root):
     dump_json(settings_path, settings)
 
 
+def append_sections(root, append_dir):
+    """Ajoute à la fin de chaque template les sections décrites dans nbr/append/templates/."""
+    for extra_path in (append_dir / "templates").glob("*.json"):
+        path = root / "templates" / extra_path.name
+        data, extra = load_json(path), load_json(extra_path)
+        data["sections"].update(extra["sections"])
+        data["order"] += extra["order"]
+        dump_json(path, data)
+
+
 def main(src, out):
     src = Path(src)
     overlay = Path(__file__).parent / "nbr"
@@ -246,7 +257,8 @@ def main(src, out):
         bar.write_text(sub_once(bar.read_text(), "#fbcb05 var(--fill)", f"{RED} var(--fill)", bar))
 
         strip_content(dst)
-        shutil.copytree(overlay, dst, dirs_exist_ok=True)
+        shutil.copytree(overlay, dst, dirs_exist_ok=True, ignore=shutil.ignore_patterns("append"))
+        append_sections(dst, overlay / "append")
 
         with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as zf:
             for path in sorted(dst.rglob("*")):

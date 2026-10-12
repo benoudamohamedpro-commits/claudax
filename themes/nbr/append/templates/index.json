@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "entretien_autonomie": {
+      "type": "section",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-start",
+        "gap": 20,
+        "gap_mobile": 24,
+        "section_width": "page-width",
+        "max_width": 1110,
+        "background_media": "none",
+        "background_color": "#ebebeb",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      },
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/magasin-modelisme-voitures-rc.webp",
+            "image_ratio": "square",
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fill",
+            "border_radius": 16
+          }
+        },
+        "texte": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "gap": 16,
+            "width": "fill",
+            "width_mobile": "fill"
+          },
+          "blocks": {
+            "titre": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Entretenez et réparez en toute autonomie.</h2>",
+                "type_preset": "h2",
+                "width": "100%"
+              }
+            },
+            "corps": {
+              "type": "text",
+              "settings": {
+                "text": "<p>La plupart des voitures RC proposées sont entièrement réparables par vos soins, même sans grandes connaissances techniques — que vous ayez 7 ans ou que vous soyez adulte.</p><p>Vous trouverez ici le modèle de modélisme qui vous correspond : <strong>une voiture télécommandée</strong> à piloter, mais aussi à entretenir et réparer facilement, seul ou en famille.</p><p>La philosophie de la boutique : permettre à chacun de réparer son modèle en toute autonomie.</p>",
+                "type_preset": "rte",
+                "width": "100%",
+                "max_width": "none"
+              }
+            }
+          },
+          "block_order": ["titre", "corps"]
+        }
+      },
+      "block_order": ["image", "texte"]
+    }
+  },
+  "order": ["entretien_autonomie"]
+}
