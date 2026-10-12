@@ -15,13 +15,19 @@ médiathèque (`shopify://shop_images/...`) ne sont **pas** incluses : seule la 
 
 La publication du thème se fait à la main dans l'admin.
 
-## Variante noir / blanc / rouge (boutique cd70bx-gg)
+## Variante « structure » noir / blanc / rouge (boutique cd70bx-gg)
 
-`horizon-nbr.zip` est généré depuis `horizon-svf/` par `recolor-nbr.py` (`python3 recolor-nbr.py horizon-svf horizon-nbr.zip`).
-Importé sur cd70bx-gg le 2026-10-12 sous le nom « Horizon - Noir Blanc Rouge » (non publié).
+`horizon-nbr.zip` est généré depuis `horizon-svf/` par `build-nbr.py` (`python3 build-nbr.py horizon-svf horizon-nbr.zip`).
+Importé sur cd70bx-gg le 2026-10-12 sous le nom « Horizon - Structure Noir Blanc Rouge » (non publié).
 
+Structure seule : code, disposition des sections et blocs de chaque page, réglages de style. Retiré :
+- les templates des produits et collections de Sacoche Vélo France (`product.*`, `collection.*`) et des apps (`page.app-*`)
+- textes, images, vidéos, liens, produits et collections choisis, menus autres que `main-menu` / `footer`
+- avis (section désactivée), sections Liquid personnalisé, blocs d'apps, logo, favicon, logos de marques vélo
+Les réglages retirés reprennent leur valeur par défaut d'Horizon.
+
+Couleurs :
 - jaune `#fcdc00` / `#fbcb05` → rouge `#e10600` ; texte posé sur ce rouge → blanc (contraste 4,97:1, WCAG AA)
-- texte et bordures rouges sur fond noir (bandeau d'annonce, section UGC) → `#ff2d20` (5,65:1 ; `#e10600` n'y fait que 4,23:1)
+- texte et bordures rouges sur fond noir (bandeau d'annonce) → `#ff2d20` (5,65:1 ; `#e10600` n'y fait que 4,23:1)
 - gris clairs `#f6f6f6` / `#f8f8f8` → blanc ; gris foncé `#252525` → noir
-- badge promo : fond rouge, texte blanc ; badge épuisé : fond noir, texte blanc
-- conservé : boutons principaux noirs, fonds gris des vignettes d'avis sans photo (`snippets/svf-review.liquid`)
+- badge promo : fond rouge, texte blanc ; badge épuisé : fond noir, texte blanc ; boutons principaux noirs
