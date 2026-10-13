@@ -20,8 +20,8 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/magasin-modelisme-voitures-rc.webp",
-            "image_ratio": "square",
+            "image": "shopify://shop_images/magasin-modelisme-voitures-rc-v2.webp",
+            "image_ratio": "adapt",
             "width": "custom",
             "custom_width": 50,
             "width_mobile": "fill",

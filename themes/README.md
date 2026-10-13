@@ -32,7 +32,7 @@ couleurs, taille des cases (66 px ordinateur, 40 px mobile par défaut), nombre 
 
 Ajout : en bas de l'accueil, section « Entretenez et réparez en toute autonomie. » (image à gauche,
 texte à droite, fond `#ebebeb`), décrite dans `nbr/append/templates/index.json`. Image : fichier
-Shopify `magasin-modelisme-voitures-rc.webp` (600×600) envoyé sur cd70bx-gg.
+Shopify `magasin-modelisme-voitures-rc-v2.webp` (1024×644, bandes blanches retirées, luminosité −15 %) envoyé sur cd70bx-gg.
 
 Couleurs :
 - jaune `#fcdc00` / `#fbcb05` → rouge `#e10600` ; texte posé sur ce rouge → blanc (contraste 4,97:1, WCAG AA)
