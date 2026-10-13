@@ -1,0 +1,158 @@
+/*
+ * DA sombre : fond à carreaux, lueur rouge, titres condensés italiques (Anton) et libellés capitales (Archivo).
+ * Appliquée au footer et aux sections qui portent la classe « nbr-dark ».
+ * Rouge sur fond sombre : #ff2d20 (5,65:1) ; fond rouge sous texte blanc : #e10600 (4,97:1).
+ */
+.shopify-section-group-footer-group,
+.shopify-section:has(.nbr-dark) {
+  --nbr-grid: rgb(255 255 255 / 0.045);
+
+  position: relative;
+  color: #ffffff;
+  background-color: #0a0a0a;
+  background-image:
+    linear-gradient(var(--nbr-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--nbr-grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Lueur rouge en haut à droite : section FAQ et premier bloc du footer seulement. */
+.shopify-section:has(.nbr-dark),
+.shopify-section-group-footer-group[id$='__footer'] {
+  background-image:
+    radial-gradient(ellipse 55% 75% at 100% 10%, rgb(225 6 0 / 0.22), transparent 70%),
+    linear-gradient(var(--nbr-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--nbr-grid) 1px, transparent 1px);
+  background-size: auto, 48px 48px, 48px 48px;
+}
+
+.shopify-section-group-footer-group .section-background,
+.shopify-section-group-footer-group .section,
+.shopify-section:has(.nbr-dark) .section-background,
+.shopify-section:has(.nbr-dark) .section {
+  background: transparent;
+}
+
+/* Étiquette rouge « FAQ ». */
+.nbr-faq-tag {
+  padding: 4px 12px;
+  background: #e10600;
+  color: #ffffff;
+  font-family: 'Archivo', var(--font-body--family);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nbr-faq-tag p {
+  margin: 0;
+}
+
+/* Titre condensé italique souligné de rouge. */
+.nbr-faq-title :is(h1, h2, h3, p) {
+  margin: 0;
+  font-family: 'Anton', var(--font-heading--family);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.nbr-faq-title::after {
+  content: '';
+  display: block;
+  width: 160px;
+  height: 4px;
+  margin-top: 8px;
+  background: #ff2d20;
+}
+
+/* Questions numérotées 01, 02… */
+.nbr-faq {
+  width: 100%;
+  counter-reset: nbr-faq;
+  --color-border: rgb(255 255 255 / 0.12);
+}
+
+.nbr-faq .details {
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+}
+
+.nbr-faq .details:last-of-type {
+  border-bottom: 1px solid rgb(255 255 255 / 0.12);
+}
+
+.nbr-faq .details__header {
+  counter-increment: nbr-faq;
+  gap: 24px;
+  padding-block: 22px;
+  color: #ffffff;
+  font-family: 'Archivo', var(--font-body--family);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.nbr-faq .details__header::before {
+  content: counter(nbr-faq, decimal-leading-zero);
+  min-width: 32px;
+  color: #ff2d20;
+  font-family: 'Anton', var(--font-heading--family);
+  font-size: 1.625rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.nbr-faq .icon-plus,
+.nbr-faq .icon-caret {
+  margin-left: auto;
+  color: #ff2d20;
+}
+
+.nbr-faq .details-content {
+  padding: 0 0 22px 56px;
+  color: rgb(255 255 255 / 0.8);
+}
+
+/* Footer : titres de colonnes condensés italiques, liens en gras, newsletter sombre et bouton rouge. */
+.shopify-section-group-footer-group :is(.menu__heading__default, .svf-menu-heading, h5, h6) {
+  font-family: 'Anton', var(--font-heading--family);
+  font-size: 1.875rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.shopify-section-group-footer-group .menu a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.shopify-section-group-footer-group .menu a:hover {
+  color: #ff2d20;
+}
+
+.shopify-section-group-footer-group .email-signup__input {
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 4px;
+  background: rgb(255 255 255 / 0.04);
+  color: #ffffff;
+}
+
+.shopify-section-group-footer-group .email-signup__button {
+  border-radius: 4px;
+  background: #e10600;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

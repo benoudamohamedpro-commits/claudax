@@ -39,3 +39,9 @@ Couleurs :
 - texte et bordures rouges sur fond noir (bandeau d'annonce) → `#ff2d20` (5,65:1 ; `#e10600` n'y fait que 4,23:1)
 - gris clairs `#f6f6f6` / `#f8f8f8` → blanc ; gris foncé `#252525` → noir
 - badge promo : fond rouge, texte blanc ; badge épuisé : fond noir, texte blanc ; boutons principaux noirs
+
+DA sombre (`nbr/assets/nbr-da.css`, chargée avec les polices Google Anton et Archivo 800 depuis
+`snippets/stylesheets.liquid`) : fond `#0a0a0a` à carreaux de 48 px, lueur rouge en haut à droite.
+Appliquée au footer (titres condensés italiques, liens en gras, newsletter sombre, bouton rouge) et à
+la section FAQ de l'accueil (classe `nbr-dark` : étiquette « FAQ », titre souligné, 8 questions numérotées).
+Les réponses de la FAQ sont à rédiger.

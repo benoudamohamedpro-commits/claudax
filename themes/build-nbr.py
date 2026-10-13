@@ -230,6 +230,14 @@ def strip_content(root):
     dump_json(settings_path, settings)
 
 
+# DA sombre (footer, FAQ) : polices Anton et Archivo, puis nbr/assets/nbr-da.css.
+DA_STYLESHEETS = """<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@800&display=swap">
+{{ 'nbr-da.css' | asset_url | stylesheet_tag }}
+"""
+
+
 def append_sections(root, append_dir):
     """Ajoute à la fin de chaque template les sections décrites dans nbr/append/templates/."""
     for extra_path in (append_dir / "templates").glob("*.json"):
@@ -263,6 +271,9 @@ def main(src, out):
         strip_content(dst)
         shutil.copytree(overlay, dst, dirs_exist_ok=True, ignore=shutil.ignore_patterns("append"))
         append_sections(dst, overlay / "append")
+
+        styles = dst / "snippets" / "stylesheets.liquid"
+        styles.write_text(styles.read_text() + DA_STYLESHEETS)
 
         with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as zf:
             for path in sorted(dst.rglob("*")):
