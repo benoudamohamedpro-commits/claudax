@@ -114,6 +114,8 @@ REMOVED_SECTIONS = {"custom-liquid"}
 # La section « Ils se sont équipés » (Liquid personnalisé svf-ugc) laisse place à la bande damier.
 UGC_SECTION = "svf-ugc"
 DISABLED_SECTIONS = {"reviews"}
+# Réglages vidés explicitement, sinon leur valeur par défaut revient (note « Excellent » 5 étoiles sans avis).
+BLANKED_SETTINGS = {"announcement-bar": {"rating_label": ""}}
 REMOVED_SETTINGS = {"logo", "logo_inverse", "favicon", "promo_end_date"}
 REMOVED_ASSETS = re.compile(r"brand-.*\.webp|sacoche-guidon-velo-hover\.png")
 # Posture d'agent : pas de « notre » dans les libellés.
@@ -202,6 +204,7 @@ def strip_page(path, schemas):
             section["disabled"] = True
         schema = schemas.section(section["type"])
         strip_settings(section, schema)
+        section.setdefault("settings", {}).update(BLANKED_SETTINGS.get(section["type"], {}))
         strip_blocks(section, schema, schemas)
     dump_json(path, data)
 
