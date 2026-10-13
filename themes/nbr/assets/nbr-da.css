@@ -156,3 +156,16 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+/* Bannière « image entière » sur mobile : plus haute (62 % de la largeur), côtés légèrement rognés.
+   L'image entière n'y ferait que 164 px de haut (format 2,38:1). Ordinateur inchangé. */
+@media screen and (max-width: 749px) {
+  .hero.svf-hero-fit .hero__media-grid {
+    height: min(62vw, 50vh);
+  }
+
+  .hero.svf-hero-fit .hero__media {
+    object-fit: cover;
+    object-position: center;
+  }
+}
