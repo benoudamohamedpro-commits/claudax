@@ -16,14 +16,20 @@
   background-size: 48px 48px;
 }
 
-/* Lueur rouge en haut à droite : section FAQ et premier bloc du footer seulement. */
-.shopify-section:has(.nbr-dark),
-.shopify-section-group-footer-group[id$='__footer'] {
+/* FAQ et footer forment un seul bloc : quadrillage calé sur la fenêtre (continu d'une section à l'autre)
+   et une seule lueur rouge, en haut à droite de la FAQ. */
+.shopify-section-group-footer-group,
+.shopify-section:has(.nbr-dark) {
+  background-attachment: fixed;
+}
+
+.shopify-section:has(.nbr-dark) {
   background-image:
     radial-gradient(ellipse 55% 75% at 100% 10%, rgb(225 6 0 / 0.22), transparent 70%),
     linear-gradient(var(--nbr-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--nbr-grid) 1px, transparent 1px);
   background-size: auto, 48px 48px, 48px 48px;
+  background-attachment: scroll, fixed, fixed;
 }
 
 .shopify-section-group-footer-group .section-background,
@@ -86,16 +92,18 @@
   border-bottom: 1px solid rgb(255 255 255 / 0.12);
 }
 
-.nbr-faq .details__header {
+/* !important : l'accordéon pose sa police en style inline (variables --summary-font-*). */
+.accordion.nbr-faq .details__header {
   counter-increment: nbr-faq;
   gap: 24px;
   padding-block: 22px;
   color: #ffffff;
-  font-family: 'Archivo', var(--font-body--family);
-  font-size: 1rem;
-  font-weight: 800;
+  font-family: 'Archivo', var(--font-body--family) !important;
+  font-size: 1rem !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .nbr-faq .details__header::before {

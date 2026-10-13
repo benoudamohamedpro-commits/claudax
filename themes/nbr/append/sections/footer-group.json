@@ -1,0 +1,16 @@
+{
+  "update": {
+    "utilities": {
+      "remove_blocks": [
+        "logo_zNBBzm"
+      ],
+      "blocks": {
+        "payment_methods_W3BxcW": {
+          "settings": {
+            "icon_size": 44
+          }
+        }
+      }
+    }
+  }
+}

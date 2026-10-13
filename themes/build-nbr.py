@@ -248,13 +248,21 @@ DA_STYLESHEETS = """<link rel="preconnect" href="https://fonts.googleapis.com">
 
 
 def append_sections(root, append_dir):
-    """Ajoute à la fin de chaque template les sections de nbr/append/templates/ et applique ses « update »."""
-    for extra_path in (append_dir / "templates").glob("*.json"):
-        path = root / "templates" / extra_path.name
+    """Applique nbr/append/{templates,sections}/ : sections ajoutées en fin de page (« sections », « order »)
+    et modifications de sections existantes (« update » : settings, blocks, remove_blocks)."""
+    for extra_path in list(append_dir.glob("templates/*.json")) + list(append_dir.glob("sections/*.json")):
+        path = root / extra_path.relative_to(append_dir)
         data, extra = load_json(path), load_json(extra_path)
         data["sections"].update(extra.get("sections", {}))
         for section_id, change in extra.get("update", {}).items():
-            data["sections"][section_id]["settings"].update(change["settings"])
+            section = data["sections"][section_id]
+            section.setdefault("settings", {}).update(change.get("settings", {}))
+            for block_id, block_change in change.get("blocks", {}).items():
+                section["blocks"][block_id]["settings"].update(block_change["settings"])
+            for block_id in change.get("remove_blocks", []):
+                del section["blocks"][block_id]
+                if "block_order" in section:
+                    section["block_order"].remove(block_id)
         # Une section déjà présente citée dans « order » est déplacée à cette position.
         order = extra.get("order", [])
         data["order"] = [i for i in data["order"] if i not in order] + order
