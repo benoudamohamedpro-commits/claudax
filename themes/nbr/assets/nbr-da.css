@@ -209,7 +209,8 @@
    aligné à gauche sur la marge de la page (la section est en pleine largeur). */
 .nbr-section-tag {
   align-self: flex-start;
-  margin: 40px 0 32px max(20px, calc((100% - var(--narrow-page-width, 1600px)) / 2)) !important;
+  /* Haut : 8 px + ~25 px laissés par la bannière = même écart (~32 px) qu'en dessous. */
+  margin: 8px 0 32px max(20px, calc((100% - var(--narrow-page-width, 1600px)) / 2)) !important;
   padding: 10px 24px 8px;
   border-radius: 10px;
   background: #e10600;
