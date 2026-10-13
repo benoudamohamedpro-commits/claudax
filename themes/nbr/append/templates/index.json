@@ -86,18 +86,19 @@
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
-            "padding-block-start": 10,
-            "padding-block-end": 30,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0,
             "rich_text_styles": false,
             "alignment_mobile": "left",
             "font_weight": "",
-            "custom_class": "visually-hidden",
+            "custom_class": "nbr-section-tag",
             "show_read_more": false,
             "read_more_length": 50,
             "read_more_text": "Voir plus",
-            "read_less_text": "Voir moins"
+            "read_less_text": "Voir moins",
+            "text": "<h2>Collection</h2>"
           },
           "blocks": {}
         },
@@ -355,36 +356,11 @@
                 "custom_class": "svf-mobile-start"
               },
               "blocks": {}
-            },
-            "button_J8zDV7": {
-              "type": "button",
-              "settings": {
-                "label": "COLLECTION",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button-custom",
-                "custom_button_background": "#e10600",
-                "custom_button_text": "#ffffff",
-                "custom_button_border": "#e10600",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100,
-                "size": "default",
-                "icon": "",
-                "icon_position": "end",
-                "margin_top": 30,
-                "show_on": "all",
-                "custom_class": "svf-fw-600"
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_VJtMDF",
             "text_8GW6GA",
-            "button_J8zDV7",
             "group_3Pie6V"
           ]
         }

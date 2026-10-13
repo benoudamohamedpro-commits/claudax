@@ -204,3 +204,23 @@
 .nbr-collection-cta p {
   margin: 0;
 }
+
+/* Titre « COLLECTION » au-dessus des cartes de collections : encadré rouge, texte blanc, centré. */
+.nbr-section-tag {
+  margin: 48px auto 24px;
+  padding: 12px 32px;
+  border-radius: 10px;
+  background: #e10600;
+}
+
+.nbr-section-tag :is(h2, p) {
+  margin: 0;
+  color: #ffffff !important;
+  font-family: 'Archivo', var(--font-body--family) !important;
+  font-size: clamp(1.5rem, 2.5vw, 2rem) !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase !important;
+}
