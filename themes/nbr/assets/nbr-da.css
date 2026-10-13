@@ -205,10 +205,12 @@
   margin: 0;
 }
 
-/* Titre « COLLECTION » au-dessus des cartes de collections : encadré rouge, texte blanc, centré. */
+/* Titre « COLLECTION » au-dessus des cartes de collections : encadré rouge, texte blanc en Anton italique,
+   aligné à gauche sur la marge de la page (la section est en pleine largeur). */
 .nbr-section-tag {
-  margin: 48px auto 24px;
-  padding: 12px 32px;
+  align-self: flex-start;
+  margin: 40px 0 32px max(20px, calc((100% - var(--narrow-page-width, 1600px)) / 2)) !important;
+  padding: 10px 24px 8px;
   border-radius: 10px;
   background: #e10600;
 }
@@ -216,11 +218,11 @@
 .nbr-section-tag :is(h2, p) {
   margin: 0;
   color: #ffffff !important;
-  font-family: 'Archivo', var(--font-body--family) !important;
-  font-size: clamp(1.5rem, 2.5vw, 2rem) !important;
-  font-style: normal !important;
-  font-weight: 800 !important;
-  line-height: 1.1 !important;
-  letter-spacing: 0.08em;
+  font-family: 'Anton', var(--font-heading--family) !important;
+  font-size: clamp(1.75rem, 3vw, 2.5rem) !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.02em;
   text-transform: uppercase !important;
 }
