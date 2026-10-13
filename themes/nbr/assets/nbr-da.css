@@ -157,15 +157,13 @@
   text-transform: uppercase;
 }
 
-/* Bannière « image entière » sur mobile : plus haute (62 % de la largeur), côtés légèrement rognés.
-   L'image entière n'y ferait que 164 px de haut (format 2,38:1). Ordinateur inchangé. */
+/* Bannière « image entière » sur mobile : la hauteur suit le format de l'image mobile (--svf-hero-ratio-mobile,
+   posée par hero.liquid) au lieu de celui de l'image ordinateur. Ordinateur et tablette (750 px et plus) inchangés. */
 @media screen and (max-width: 749px) {
   .hero.svf-hero-fit .hero__media-grid {
-    height: min(62vw, 50vh);
-  }
-
-  .hero.svf-hero-fit .hero__media {
-    object-fit: cover;
-    object-position: center;
+    height: min(
+      calc(100vw / var(--svf-hero-ratio-mobile, var(--svf-hero-ratio, 1.777))),
+      var(--svf-hero-height-mobile, 70vh)
+    );
   }
 }

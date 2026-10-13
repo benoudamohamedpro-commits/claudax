@@ -230,6 +230,15 @@ def strip_content(root):
     dump_json(settings_path, settings)
 
 
+# Bannière « image entière » : format de l'image mobile, utilisé par nbr-da.css sous 750 px.
+HERO_RATIO_OLD = "--svf-hero-ratio: {{ section.settings.image_1.aspect_ratio }};{% endif %}"
+HERO_RATIO_NEW = (
+    HERO_RATIO_OLD
+    + "{% if section.settings.fit_image and section.settings.custom_mobile_media"
+    + " and section.settings.image_1_mobile != blank %}"
+    + "--svf-hero-ratio-mobile: {{ section.settings.image_1_mobile.aspect_ratio }};{% endif %}"
+)
+
 # DA sombre (footer, FAQ) : polices Anton et Archivo, puis nbr/assets/nbr-da.css.
 DA_STYLESHEETS = """<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -274,6 +283,9 @@ def main(src, out):
         strip_content(dst)
         shutil.copytree(overlay, dst, dirs_exist_ok=True, ignore=shutil.ignore_patterns("append"))
         append_sections(dst, overlay / "append")
+
+        hero = dst / "sections" / "hero.liquid"
+        hero.write_text(sub_once(hero.read_text(), HERO_RATIO_OLD, HERO_RATIO_NEW, hero))
 
         styles = dst / "snippets" / "stylesheets.liquid"
         styles.write_text(styles.read_text() + DA_STYLESHEETS)

@@ -315,7 +315,11 @@
       "settings": {
         "media_type_1": "image",
         "image_1": "shopify://shop_images/banniere-voitures-drift.webp",
-        "fit_image": true
+        "fit_image": true,
+        "custom_mobile_media": true,
+        "media_type_1_mobile": "image",
+        "image_1_mobile": "shopify://shop_images/banniere-voitures-drift-mobile.webp",
+        "height_vh_mobile": 75
       }
     }
   }
