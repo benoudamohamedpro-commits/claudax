@@ -52,3 +52,6 @@ Mobile (moins de 750 px) : image verticale `banniere-voitures-drift-mobile.webp`
 `build-nbr.py` ajoute `--svf-hero-ratio-mobile` dans `sections/hero.liquid` pour que la hauteur suive son format.
 FAQ intégrée au footer (première section du groupe footer, visible sur toutes les pages) : un seul bloc (quadrillage calé sur la fenêtre, une seule lueur en haut de la FAQ). Footer modifié
 via `nbr/append/sections/footer-group.json` : bloc logo « My Store » géant retiré, logos de paiement 44 px.
+Collections de l'accueil (`collections_featured_KXQTLh`, redéfinie dans `nbr/append/templates/index.json`) : 3 colonnes
+pleine largeur, cartes portrait sans arrondi, dégradé sombre, titre + « Voir la collection » souligné sur l'image,
+carrousel sur mobile.

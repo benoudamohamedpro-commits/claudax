@@ -185,3 +185,22 @@
     object-position: center 52%;
   }
 }
+
+/* Collections de l'accueil : cartes portrait, titre et lien « Voir la collection » souligné sur l'image. */
+.nbr-collection-title :is(h3, p) {
+  margin: 0;
+  color: #ffffff;
+}
+
+.nbr-collection-cta {
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(255 255 255 / 0.5);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nbr-collection-cta p {
+  margin: 0;
+}
