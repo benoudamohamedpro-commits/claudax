@@ -43,7 +43,7 @@ Couleurs :
 DA sombre (`nbr/assets/nbr-da.css`, chargée avec les polices Google Anton et Archivo 800 depuis
 `snippets/stylesheets.liquid`) : fond `#0a0a0a` à carreaux de 48 px, lueur rouge en haut à droite.
 Appliquée au footer (titres condensés italiques, liens en gras, newsletter sombre, bouton rouge) et à
-la section FAQ de l'accueil (classe `nbr-dark` : étiquette « FAQ », titre souligné, 8 questions numérotées).
+la section FAQ de l'accueil (classe `nbr-dark` : étiquette « FAQ », titre souligné, 3 questions numérotées : commande & livraison, paiement & retour, SAV).
 Les réponses de la FAQ sont à rédiger.
 
 Bannière du haut de l'accueil (`image_banner_VXNP89`, réglages modifiés via la clé `update` de

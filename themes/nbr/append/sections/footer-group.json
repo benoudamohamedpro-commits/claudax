@@ -58,116 +58,6 @@
             "custom_class": "nbr-faq"
           },
           "blocks": {
-            "question_01": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Fiabilité & durée de vie",
-                "open_by_default": false,
-                "icon": "none"
-              },
-              "blocks": {
-                "reponse_01": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Réponse à rédiger.</p>",
-                    "type_preset": "rte",
-                    "width": "100%",
-                    "max_width": "none"
-                  }
-                }
-              },
-              "block_order": [
-                "reponse_01"
-              ]
-            },
-            "question_02": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "SAV",
-                "open_by_default": false,
-                "icon": "none"
-              },
-              "blocks": {
-                "reponse_02": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Réponse à rédiger.</p>",
-                    "type_preset": "rte",
-                    "width": "100%",
-                    "max_width": "none"
-                  }
-                }
-              },
-              "block_order": [
-                "reponse_02"
-              ]
-            },
-            "question_03": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Performance & specs",
-                "open_by_default": false,
-                "icon": "none"
-              },
-              "blocks": {
-                "reponse_03": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Réponse à rédiger.</p>",
-                    "type_preset": "rte",
-                    "width": "100%",
-                    "max_width": "none"
-                  }
-                }
-              },
-              "block_order": [
-                "reponse_03"
-              ]
-            },
-            "question_04": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Upgrades & compatibilité",
-                "open_by_default": false,
-                "icon": "none"
-              },
-              "blocks": {
-                "reponse_04": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Réponse à rédiger.</p>",
-                    "type_preset": "rte",
-                    "width": "100%",
-                    "max_width": "none"
-                  }
-                }
-              },
-              "block_order": [
-                "reponse_04"
-              ]
-            },
-            "question_05": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Usage enfant",
-                "open_by_default": false,
-                "icon": "none"
-              },
-              "blocks": {
-                "reponse_05": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Réponse à rédiger.</p>",
-                    "type_preset": "rte",
-                    "width": "100%",
-                    "max_width": "none"
-                  }
-                }
-              },
-              "block_order": [
-                "reponse_05"
-              ]
-            },
             "question_06": {
               "type": "_accordion-row",
               "settings": {
@@ -212,15 +102,15 @@
                 "reponse_07"
               ]
             },
-            "question_08": {
+            "question_02": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "La marque",
+                "heading": "SAV",
                 "open_by_default": false,
                 "icon": "none"
               },
               "blocks": {
-                "reponse_08": {
+                "reponse_02": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Réponse à rédiger.</p>",
@@ -231,19 +121,14 @@
                 }
               },
               "block_order": [
-                "reponse_08"
+                "reponse_02"
               ]
             }
           },
           "block_order": [
-            "question_01",
-            "question_02",
-            "question_03",
-            "question_04",
-            "question_05",
             "question_06",
             "question_07",
-            "question_08"
+            "question_02"
           ]
         }
       },
