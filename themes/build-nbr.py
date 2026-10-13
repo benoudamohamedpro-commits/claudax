@@ -236,7 +236,8 @@ def append_sections(root, append_dir):
         path = root / "templates" / extra_path.name
         data, extra = load_json(path), load_json(extra_path)
         data["sections"].update(extra["sections"])
-        data["order"] += extra["order"]
+        # Une section déjà présente citée dans « order » est déplacée à cette position.
+        data["order"] = [i for i in data["order"] if i not in extra["order"]] + extra["order"]
         dump_json(path, data)
 
 

@@ -7,14 +7,14 @@
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "flex-start",
-        "gap": 20,
+        "gap": 40,
         "gap_mobile": 24,
         "section_width": "page-width",
-        "max_width": 1110,
+        "max_width": 1400,
         "background_media": "none",
         "background_color": "#ebebeb",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 60,
+        "padding-block-end": 60
       },
       "blocks": {
         "image": {
@@ -55,11 +55,20 @@
               }
             }
           },
-          "block_order": ["titre", "corps"]
+          "block_order": [
+            "titre",
+            "corps"
+          ]
         }
       },
-      "block_order": ["image", "texte"]
+      "block_order": [
+        "image",
+        "texte"
+      ]
     }
   },
-  "order": ["entretien_autonomie"]
+  "order": [
+    "entretien_autonomie",
+    "custom_section_9czqTW"
+  ]
 }

@@ -31,7 +31,7 @@ Ajout : section « Bande damier » (`nbr/sections/damier.liquid`, damier noir et
 couleurs, taille des cases (66 px ordinateur, 40 px mobile par défaut), nombre de rangées (2).
 
 Ajout : en bas de l'accueil, section « Entretenez et réparez en toute autonomie. » (image à gauche,
-texte à droite, fond `#ebebeb`), décrite dans `nbr/append/templates/index.json`. Image : fichier
+texte à droite, fond `#ebebeb`, largeur 1400 px), suivie de la section FAQ, décrite dans `nbr/append/templates/index.json`. Image : fichier
 Shopify `magasin-modelisme-voitures-rc-v2.webp` (1024×644, bandes blanches retirées, luminosité −15 %) envoyé sur cd70bx-gg.
 
 Couleurs :
