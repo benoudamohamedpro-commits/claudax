@@ -47,4 +47,4 @@ la section FAQ de l'accueil (classe `nbr-dark` : étiquette « FAQ », titre sou
 Les réponses de la FAQ sont à rédiger.
 
 Bannière du haut de l'accueil (`image_banner_VXNP89`, réglages modifiés via la clé `update` de
-`nbr/append/templates/index.json`) : image `banniere-voitures-drift.webp` (1935×812) à la place de la vidéo.
+`nbr/append/templates/index.json`) : image `banniere-voitures-drift.webp` (1935×812) à la place de la vidéo, option « Image entière » activée (aucun rognage).

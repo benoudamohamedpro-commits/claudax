@@ -314,7 +314,8 @@
     "image_banner_VXNP89": {
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/banniere-voitures-drift.webp"
+        "image_1": "shopify://shop_images/banniere-voitures-drift.webp",
+        "fit_image": true
       }
     }
   }
