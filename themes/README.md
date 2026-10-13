@@ -55,3 +55,4 @@ via `nbr/append/sections/footer-group.json` : bloc logo « My Store » géant re
 Collections de l'accueil (`collections_featured_KXQTLh`, redéfinie dans `nbr/append/templates/index.json`) : 3 colonnes
 pleine largeur, cartes portrait sans arrondi, dégradé sombre, titre + « Voir la collection » souligné sur l'image,
 carrousel sur mobile.
+Bannière d'accueil : bouton « Je découvre » remplacé par l'étiquette rouge « COLLECTION » (classe `nbr-red-label`).
