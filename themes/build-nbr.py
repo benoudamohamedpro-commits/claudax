@@ -249,10 +249,14 @@ DA_STYLESHEETS = """<link rel="preconnect" href="https://fonts.googleapis.com">
 
 def append_sections(root, append_dir):
     """Applique nbr/append/{templates,sections}/ : sections ajoutées en fin de page (« sections », « order »)
-    et modifications de sections existantes (« update » : settings, blocks, remove_blocks)."""
+    modifications de sections existantes (« update » : settings, blocks, remove_blocks) et sections retirées
+    (« remove_sections »)."""
     for extra_path in list(append_dir.glob("templates/*.json")) + list(append_dir.glob("sections/*.json")):
         path = root / extra_path.relative_to(append_dir)
         data, extra = load_json(path), load_json(extra_path)
+        for section_id in extra.get("remove_sections", []):
+            del data["sections"][section_id]
+            data["order"].remove(section_id)
         data["sections"].update(extra.get("sections", {}))
         for section_id, change in extra.get("update", {}).items():
             section = data["sections"][section_id]

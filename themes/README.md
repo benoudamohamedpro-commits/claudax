@@ -50,5 +50,5 @@ Bannière du haut de l'accueil (`image_banner_VXNP89`, réglages modifiés via l
 `nbr/append/templates/index.json`) : image `banniere-voitures-drift.webp` (1935×812) à la place de la vidéo, option « Image entière » activée (aucun rognage).
 Mobile (moins de 750 px) : image verticale `banniere-voitures-drift-mobile.webp` (825×1024), affichée entière ;
 `build-nbr.py` ajoute `--svf-hero-ratio-mobile` dans `sections/hero.liquid` pour que la hauteur suive son format.
-FAQ + footer : un seul bloc (quadrillage calé sur la fenêtre, une seule lueur en haut de la FAQ). Footer modifié
+FAQ intégrée au footer (première section du groupe footer, visible sur toutes les pages) : un seul bloc (quadrillage calé sur la fenêtre, une seule lueur en haut de la FAQ). Footer modifié
 via `nbr/append/sections/footer-group.json` : bloc logo « My Store » géant retiré, logos de paiement 44 px.
