@@ -204,23 +204,3 @@
 .nbr-collection-cta p {
   margin: 0;
 }
-
-/* Étiquette rouge « COLLECTION » de la bannière d'accueil : même gabarit que le bouton qu'elle remplace. */
-.nbr-red-label {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: var(--svf-button-min-height, 50px);
-  min-width: var(--svf-button-min-width, 120px);
-  padding: 0 22px;
-  border-radius: 10px;
-  background: #e10600;
-  color: #ffffff;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.nbr-red-label p {
-  margin: 0;
-}
