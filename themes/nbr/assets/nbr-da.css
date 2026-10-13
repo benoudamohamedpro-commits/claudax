@@ -157,13 +157,23 @@
   text-transform: uppercase;
 }
 
-/* Bannière « image entière » sur mobile : la hauteur suit le format de l'image mobile (--svf-hero-ratio-mobile,
-   posée par hero.liquid) au lieu de celui de l'image ordinateur. Ordinateur et tablette (750 px et plus) inchangés. */
+/* Bannière « image entière » sur mobile : image verticale en plein cadre, hauteur 90 % de la largeur,
+   haut (plafond) et bas (sol) légèrement rognés, sans bandes floutées sur les côtés.
+   Ordinateur et tablette (750 px et plus) inchangés. */
 @media screen and (max-width: 749px) {
   .hero.svf-hero-fit .hero__media-grid {
-    height: min(
-      calc(100vw / var(--svf-hero-ratio-mobile, var(--svf-hero-ratio, 1.777))),
-      var(--svf-hero-height-mobile, 70vh)
-    );
+    height: 90vw;
+    background: none;
+  }
+
+  .hero.svf-hero-fit .hero__media-grid::before {
+    content: none;
+  }
+
+  .hero.svf-hero-fit .hero__media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 52%;
   }
 }
