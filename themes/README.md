@@ -45,3 +45,6 @@ DA sombre (`nbr/assets/nbr-da.css`, chargée avec les polices Google Anton et Ar
 Appliquée au footer (titres condensés italiques, liens en gras, newsletter sombre, bouton rouge) et à
 la section FAQ de l'accueil (classe `nbr-dark` : étiquette « FAQ », titre souligné, 8 questions numérotées).
 Les réponses de la FAQ sont à rédiger.
+
+Bannière du haut de l'accueil (`image_banner_VXNP89`, réglages modifiés via la clé `update` de
+`nbr/append/templates/index.json`) : image `banniere-voitures-drift.webp` (1935×812) à la place de la vidéo.

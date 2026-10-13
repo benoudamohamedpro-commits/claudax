@@ -309,5 +309,13 @@
   "order": [
     "entretien_autonomie",
     "custom_section_9czqTW"
-  ]
+  ],
+  "update": {
+    "image_banner_VXNP89": {
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/banniere-voitures-drift.webp"
+      }
+    }
+  }
 }

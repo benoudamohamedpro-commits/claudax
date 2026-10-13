@@ -239,13 +239,16 @@ DA_STYLESHEETS = """<link rel="preconnect" href="https://fonts.googleapis.com">
 
 
 def append_sections(root, append_dir):
-    """Ajoute à la fin de chaque template les sections décrites dans nbr/append/templates/."""
+    """Ajoute à la fin de chaque template les sections de nbr/append/templates/ et applique ses « update »."""
     for extra_path in (append_dir / "templates").glob("*.json"):
         path = root / "templates" / extra_path.name
         data, extra = load_json(path), load_json(extra_path)
-        data["sections"].update(extra["sections"])
+        data["sections"].update(extra.get("sections", {}))
+        for section_id, change in extra.get("update", {}).items():
+            data["sections"][section_id]["settings"].update(change["settings"])
         # Une section déjà présente citée dans « order » est déplacée à cette position.
-        data["order"] = [i for i in data["order"] if i not in extra["order"]] + extra["order"]
+        order = extra.get("order", [])
+        data["order"] = [i for i in data["order"] if i not in order] + order
         dump_json(path, data)
 
 
