@@ -181,13 +181,19 @@
     <script>
 (function () {
   var end = new Date('{{ settings.promo_end_date }}').getTime();
+  var afterText = {{ settings.promo_after_text | json }};
   function render() {
     var bars = document.querySelectorAll('[id*="announcement_bar"]');
     bars.forEach(function (bar) {
       var target = bar.querySelector('#promo-countdown');
-      // Promo terminée (ou date invalide) : pas de chrono à zéro
+      // Promo terminée (ou date invalide) : pas de chrono à zéro, on affiche le texte prévu pour l'après-promo
       if (!(end - Date.now() > 0)) {
         if (target) target.remove();
+        var ended = bar.querySelector('p');
+        if (afterText && ended && !ended.dataset.promoEnded) {
+          ended.innerHTML = afterText;
+          ended.dataset.promoEnded = 'true';
+        }
         return;
       }
       if (!target) {

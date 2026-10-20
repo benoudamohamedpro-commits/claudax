@@ -9,12 +9,12 @@
  */
 {
   "current": {
-    "logo_height": 70,
+    "logo_height": 54,
     "logo_height_mobile": 70,
-    "type_body_font": "oswald_n4",
-    "type_subheading_font": "oswald_n5",
-    "type_heading_font": "oswald_n6",
-    "type_accent_font": "oswald_n6",
+    "type_body_font": "roboto_n4",
+    "type_subheading_font": "barlow_condensed_n6",
+    "type_heading_font": "barlow_condensed_n7",
+    "type_accent_font": "barlow_condensed_n7",
     "type_size_paragraph": "14",
     "type_line_height_paragraph": "body-normal",
     "type_font_h1": "heading",
@@ -122,7 +122,7 @@
     "palette_selected_variant_background": "#ffffff",
     "palette_selected_variant_text": "#000000",
     "palette_selected_variant_border": "#000000",
-    "promo_end_date": "2026-09-12T00:00:00+02:00",
+    "promo_end_date": "2026-10-26T23:59:59+01:00",
     "type_letter_spacing_h4": "heading-normal",
     "type_case_h4": "none",
     "type_letter_spacing_h5": "heading-normal",
@@ -151,7 +151,8 @@
         "disabled": false,
         "settings": {}
       }
-    }
+    },
+    "promo_after_text": "<p><strong>-25€</strong> dès 250€ d’achat</p>"
   },
   "presets": {
     "Default": {

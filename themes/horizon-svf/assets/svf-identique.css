@@ -563,12 +563,113 @@ body {
 /* Bandeau promo de la barre d'annonce (repris du thème d'origine). */
 .text-block.announcement-promo,
 .text-block.announcement-promo > * {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px !important;
+  font-family: var(--font-body--family);
+  font-size: 19px !important;
   font-weight: 700 !important;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  line-height: 1.4;
+  letter-spacing: normal;
   text-transform: uppercase;
+}
+
+/* Grande bannière de l'accueil : proportions reprises de sac-cabine.com */
+.text-block.svf-hero-title,
+.text-block.svf-hero-title > * {
+  max-width: 640px;
+  font-family: var(--font-heading--family) !important;
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  line-height: 70px !important;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.text-block.svf-hero-sub,
+.text-block.svf-hero-sub > * {
+  font-family: var(--font-body--family) !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+}
+
+.svf-hero-button,
+.svf-hero-button a {
+  font-family: var(--font-body--family) !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  border-radius: 0 !important;
+}
+
+a.svf-hero-button,
+.svf-hero-button a {
+  min-width: 220px;
+  padding: 14px 48px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.svf-hero-check,
+.svf-hero-check p {
+  font-family: var(--font-body--family) !important;
+  font-size: 15px !important;
+  line-height: 21px !important;
+  color: #ffffff;
+}
+
+/* Demande du commerçant : sur écran tactile, la carte produit garde toujours sa 1re photo. Le mini-diaporama de la
+   carte captait le glissement du doigt destiné au carrousel et restait bloqué sur une autre photo. Sans défilement
+   possible dans la carte, le glissement passe au carrousel. */
+@media (hover: none), (pointer: coarse) {
+  .product-card .card-gallery slideshow-slides {
+    overflow: hidden !important;
+    scroll-snap-type: none !important;
+    touch-action: pan-x pan-y;
+  }
+
+  .product-card .card-gallery slideshow-controls,
+  .product-card .card-gallery slideshow-arrows {
+    display: none !important;
+  }
+}
+
+/* Titre des fiches produit : majuscules 36px comme sac-cabine.com (24px sur mobile) */
+[class*='__text_zLqMQw'] h1 {
+  font-family: var(--font-heading--family) !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  line-height: 45px !important;
+  letter-spacing: normal !important;
+  text-transform: uppercase !important;
+  color: #252525;
+}
+
+@media (width <= 750px) {
+  [class*='__text_zLqMQw'] h1 {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+}
+
+#header-component .currency-code {
+  font-size: 16px !important;
+}
+
+/* En-tête : menu agrandi */
+.menu-list__link-title {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+}
+
+@media (width <= 750px) {
+  .text-block.svf-hero-title,
+  .text-block.svf-hero-title > * {
+    font-size: 38px !important;
+    line-height: 44px !important;
+  }
+
+  .text-block.svf-hero-sub,
+  .text-block.svf-hero-sub > * {
+    font-size: 15px !important;
+  }
 }
 
 .announcement-promo strong {
@@ -576,10 +677,18 @@ body {
   color: #fbcb05;
 }
 
+/* Mobile : promo + compteur sur une seule ligne */
 @media (width <= 750px) {
   .text-block.announcement-promo,
   .text-block.announcement-promo > * {
-    font-size: 15px !important;
+    font-size: 14px !important;
+  }
+}
+
+@media (width < 380px) {
+  .text-block.announcement-promo,
+  .text-block.announcement-promo > * {
+    font-size: 12.5px !important;
   }
 }
 
@@ -1786,7 +1895,7 @@ product-card product-price + div:has(> .svf-rating) {
 }
 
 .product-details .variant-picker.svf-swatches--big {
-  --svf-swatch-size: 45px;
+  --svf-swatch-size: 56px;
   --svf-swatch-offset: 3px;
 }
 
@@ -1799,7 +1908,7 @@ product-card product-price + div:has(> .svf-rating) {
 }
 
 .product-details .variant-picker.svf-swatches--square.svf-swatches--big {
-  --svf-swatch-radius: 12px;
+  --svf-swatch-radius: 14px;
 }
 
 /* Libellé de l'option (« Couleur : ») : 14px, graisse 500, 8px sous le libellé. */
@@ -2490,10 +2599,51 @@ body.svf-overflow-hidden {
   }
 }
 
-/* Demande du commerçant (10/2026) : en plein écran sur mobile, miniatures plus petites pour laisser la place à la photo. */
+/* Demande du commerçant (10/2026) : en plein écran sur mobile, miniatures plus petites, photo entière au-dessus des
+   miniatures (sans passer dessous) et changement de photo en glissant le doigt (bloqué par Horizon d'origine). */
 @media screen and (max-width: 749px) {
   .dialog-thumbnails-list {
-    --thumbnail-width: 56px;
+    /* !important : le thème fixe la largeur des miniatures en style en ligne */
+    --thumbnail-width: 64px !important;
+  }
+
+  .dialog-thumbnails-list__thumbnail,
+  .dialog-thumbnails-list__thumbnail img {
+    /* min-width : le style des boutons du thème impose 120px minimum */
+    min-width: 0 !important;
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .dialog-zoomed-gallery {
+    overflow-x: auto !important;
+  }
+
+  /* Vidéo dans la vue agrandie : le glissement horizontal du doigt est laissé au script de la galerie
+     (zoom-dialog.js), pour passer à la photo voisine comme sur une photo. */
+  .dialog-zoomed-gallery > li:not(.product-media-container--image) {
+    touch-action: pan-y;
+  }
+
+  .dialog-zoomed-gallery .product-media-container--image {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    /* 96px = miniature 64px + 2 × 16px de marge de la barre des miniatures */
+    height: calc(100dvh - 96px - var(--safe-area-inset-bottom, 0px));
+    padding-block: 70px 10px;
+  }
+
+  .dialog-zoomed-gallery .product-media-container--image :is(.product-media__drag-zoom-wrapper, .product-media) {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+  }
+
+  .dialog-zoomed-gallery .product-media-container--image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 
@@ -2509,6 +2659,13 @@ body.svf-overflow-hidden {
   z-index: calc(var(--layer-sticky) - 1);
 }
 
+/* Demande du commerçant (10/2026) : pas de contour ovale autour de la croix de fermeture de la vue agrandie
+   (le navigateur la sélectionne à l'ouverture et l'entourait d'un trait). */
+.dialog-zoomed-gallery__close-button:focus,
+.dialog-zoomed-gallery__close-button:focus-visible {
+  outline: none;
+}
+
 /* Vidéo produit en plein écran (bouton du lecteur) : toujours affichée entière, jamais recadrée comme dans la galerie. */
 .product-media video:fullscreen {
   object-fit: contain !important;
@@ -2516,4 +2673,13 @@ body.svf-overflow-hidden {
 
 .product-media video:-webkit-full-screen {
   object-fit: contain !important;
+}
+
+/* Demande du commerçant (10/2026) : les puces des fiches produit (bloc « Icône avec texte », icône coche) passent
+   d'une coche noire à un rond vert clair avec une coche verte. Le dessin remplace le masque de l'icône. */
+.icon-with-text .svf-icon.icon--check {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23dcf3e5'/%3E%3Cpath d='M7.2 12.4l3.1 3.1 6.5-6.7' fill='none' stroke='%232f8a55' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+  -webkit-mask: none;
+  mask: none;
 }
