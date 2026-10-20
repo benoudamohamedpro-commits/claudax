@@ -986,31 +986,39 @@ a.button-secondary.svf-button[aria-disabled='true'] {
 }
 
 
-/* Demande du commerçant : le menu complet doit rester affiché sur tous les écrans d'ordinateur. Entre 990 et
-   1440px de large, le texte du menu et ses espacements rétrécissent avec la fenêtre pour tenir sur la ligne. */
-@media screen and (min-width: 990px) and (max-width: 1439px) {
-  .header .header-menu .menu-list__link {
-    font-size: clamp(0.78rem, 1.17vw, 1.05rem);
+/* Demande du commerçant : le menu complet tient toujours sur une ligne, sans entrée « Plus » ; le texte rétrécit
+   plutôt que de cacher une entrée. Sous 1200px de large (tablette), l'en-tête passe en menu tiroir : logo et icônes
+   seulement (voir setHeaderMenuStyle dans utilities.js et layout/theme.liquid).
+   Calcul : les 6 entrées en Barlow Condensed 700 majuscule mesurent 34,3 × la taille du texte, + 2 marges par entrée
+   + 24px de flèche par entrée à sous-menu. À 1200px, la colonne du menu fait ~800px (largeur moins logo de 150px,
+   icônes de ~190px, marges et espacements) : le texte passe de 19px à ~18px, avec 6 % de marge de sécurité. */
+@media screen and (min-width: 750px) {
+  .header .header-menu {
+    --svf-menu-font-size: clamp(14px, calc(2.2vw - 8.3px), 19px);
+    --svf-menu-padding: clamp(6px, calc(3vw - 29px), 10px);
   }
 
-  .header .menu-list .menu-list__link-title {
-    padding-inline: clamp(4px, 0.7vw, 10px);
+  .header .header-menu .menu-list__link-title {
+    font-size: var(--svf-menu-font-size) !important;
   }
 
-  .header .menu-list__list-item:has(> .menu-list__trigger > .menu-list__disclosure) .menu-list__link-title {
-    padding-inline-end: calc(clamp(4px, 0.7vw, 10px) + 22px);
+  /* L'entrée « Plus » n'est jamais affichée : si le menu ne tient pas malgré tout, l'en-tête passe en menu tiroir.
+     visibility et non display : overflow-list mesure sa position pour répartir les entrées. */
+  .header .header-menu .menu-list__list-item[slot='more'] {
+    visibility: hidden;
+  }
+}
+
+/* Écrans d'ordinateur jusqu'à 1599px : le logo et les icônes ne prennent que leur largeur, le menu occupe tout le
+   reste (la grille d'Horizon réserve au logo la largeur des icônes, ~40px perdus). */
+@media screen and (min-width: 750px) and (max-width: 1599px) {
+  #header-component[data-menu-style='menu'] .header__columns {
+    grid-template-columns: auto minmax(0, 1fr) auto;
   }
 
   .header .header__column--right,
   .header header-actions {
     gap: clamp(8px, 1.1vw, 16px);
-  }
-}
-
-/* Petits écrans d'ordinateur : le logo et les icônes ne prennent que leur largeur, le menu occupe tout le reste. */
-@media screen and (min-width: 990px) and (max-width: 1279px) {
-  #header-component[data-menu-style='menu'] .header__columns {
-    grid-template-columns: auto minmax(0, 1fr) auto;
   }
 }
 
@@ -1024,8 +1032,9 @@ a.button-secondary.svf-button[aria-disabled='true'] {
   font-size: 0.9375rem;
 }
 
-/* Sur mobile, le thème d'origine n'affiche pas l'icône du compte dans l'en-tête. */
-@media screen and (max-width: 749px) {
+/* Sur mobile et tablette (en-tête en menu tiroir sous 1200px), le thème d'origine n'affiche pas l'icône du compte
+   dans l'en-tête. */
+@media screen and (max-width: 1199px) {
   .header header-actions > .account-button.header-actions__action {
     display: none;
   }
@@ -1187,13 +1196,14 @@ a.button-secondary.svf-button[aria-disabled='true'] {
 }
 
 @media screen and (min-width: 750px) {
-  /* Menu principal : 20px entre deux entrées ; flèche de 20px, 4px après le texte, pour les entrées à sous-menu. */
+  /* Menu principal : 20px entre deux entrées (12px au minimum sur écran étroit) ; flèche de 20px, 4px après le texte,
+     pour les entrées à sous-menu. */
   .header .menu-list .menu-list__link-title {
-    padding-inline: 10px;
+    padding-inline: var(--svf-menu-padding, 10px);
   }
 
   .header .menu-list__list-item:has(> .menu-list__trigger > .menu-list__disclosure) .menu-list__link-title {
-    padding-inline-end: 34px;
+    padding-inline-end: calc(var(--svf-menu-padding, 10px) + 24px);
   }
 
   .header .menu-list .menu-list__trigger {
@@ -1201,7 +1211,7 @@ a.button-secondary.svf-button[aria-disabled='true'] {
   }
 
   .header .menu-list .menu-list__disclosure {
-    inset: 50% 10px auto auto;
+    inset: 50% var(--svf-menu-padding, 10px) auto auto;
     width: 20px;
     height: 20px;
     padding: 0;

@@ -144,7 +144,8 @@
             const isTouchDevice = 'ontouchstart' in window && navigator.maxTouchPoints > 0;
             const overflowList = headerComponent.querySelector('overflow-list');
             const hasReachedMinimum = overflowList && overflowList.hasAttribute('minimum-reached');
-            headerComponent.dataset.menuStyle = isTouchDevice || hasReachedMinimum ? 'drawer' : 'menu';
+            const isTabletWidth = window.matchMedia('(max-width: 1199px)').matches;
+            headerComponent.dataset.menuStyle = isTouchDevice || isTabletWidth || hasReachedMinimum ? 'drawer' : 'menu';
           }
         })();
       </script>

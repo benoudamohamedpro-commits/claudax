@@ -809,7 +809,9 @@ export function setHeaderMenuStyle() {
     window.requestAnimationFrame(() => {
       const overflowList = headerComponent?.querySelector('overflow-list');
       const hasReachedMinimum = overflowList && overflowList.hasAttribute('minimum-reached');
-      headerComponent.dataset.menuStyle = isTouchDevice() || hasReachedMinimum ? 'drawer' : 'menu';
+      // Demande du commerçant : sous 1200px (tablette), menu tiroir avec le logo seul, voir svf-identique.css.
+      const isTabletWidth = window.matchMedia('(max-width: 1199px)').matches;
+      headerComponent.dataset.menuStyle = isTouchDevice() || isTabletWidth || hasReachedMinimum ? 'drawer' : 'menu';
     });
   }
 }
